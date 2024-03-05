@@ -1,18 +1,16 @@
 # Introdução
 
-Texto **descritivo** com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+ Recorrente no século XXI, o avanço tecnológico expandiu diversas áreas do conhecimento, possibilitando uma cadeia de inovações comunicativas e econômicas. Com o decorrer dos anos, essa tecnologia se tornou acessível a diversos públicos, porém, muitas pessoas não sabem como ingressar na área. Analisando especificamente aqueles que poderiam começar uma carreira no mundo das linguagens de programação, observa-se que poucas instituições de ensino incentivam tal conhecimento, ocasionando na desinformação daquele que sequer foi instruído e, em outro cenário, a desistência daquele que procurou ser autodidata, pela falta de proximidade com o conteúdo e com pessoas que já experienciam a área.
 
 ## Problema
  Atualmente existem diversos fatores que causam a desistência de se ingressar na área da programação e a natureza dinâmica da tecnologia pode se apresentar um dos principais desafios para quem inicia nessa área. A preocupação com o mercado de trabalho pode causar confusão e desamparo em quais linguagens ou conteúdos devem ser investidos os estudos e aplicações práticas, portanto, a carência de conteúdos intuitivos e direcionamento podem causar lacunas no desenvolvimento profissional e acadêmico deste estudante.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho que será realizado pelo grupo indicando qual é o objetivo geral que se busca atingir para solucionar/minimizar o problema apresentado acima. 
+ A partir do princípio teórico e prático do ambiente de programação, apresentar de forma intuitiva o mundo das linguagens aos indivíduos que não foram propriamente instruídos sobre tal possibilidade, organizando formas eficientes que ao mesmo tempo despertem interesse no usuário e não os afastem por complicação técnica desnecessária no início.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+ Especificando, o projeto não tende a ensinar por completo o usuário sobre programação, mas sim educá-lo sobre a existência e, em um cenário mais positivo, despertar-lhe o interesse para que o mesmo busque pessoas e informações que complementam sua curiosidade. Logo, a parte introdutória à lógica de programação seria parte significativa do conteúdo, sendo escolhida a linguagem C, pela sua praticidade e por ter muito conteúdo a se discutir. Uniforme à lógica e sintaxe de programação, a extensão pretende informar noções de desenvolvimento WEB, sendo HTML, CSS e JavaScript. Essa área é crucial pois estimula muito a curiosidade e criatividade daqueles que estão aprendendo.
+
 
 ## Justificativa
 
