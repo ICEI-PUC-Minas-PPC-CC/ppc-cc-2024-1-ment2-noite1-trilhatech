@@ -1,31 +1,21 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do diagrama de personas (identifiquem, no mínimo, 2 personas), histórias de usuários (identifiquem, no mínimo, 3 histórias de usuários por persona), requisitos funcionais, requisitos não funcionais e artefatos produzidos para levantamento de dados).
-
 ## Personas
 
-Exemplo:
-
-|**Camila Fiães**|           |                             | 
+|**João Silva**|           |                             | 
 |-------------------|-----------|-----------------------------|
-<img src="https://github.com/ICEI-PUC-Minas-PPC-CC/Template-MentoringII/blob/main/docs/img/camilafiaes.png" width="200" height="200"/>|**Idade:** 38 anos. **Naturalidade:** Contagem - Minas Gerais. **Ocupação:** Caixa de Supermercado.       |**Atribuições:** gerenciar operações com clientes usando caixas registradoras. 
-|**Motivações:** Deseja organizar e ter fácil acesso aos documentos médicos do seu filho que tem asma.  |**Frustações:** dificuldade para gerenciar a vida profissional e pessoal, pois, além de trabalhar fora, quando chega em casa tem de desempenhar os papeis de mãe, esposa e dona de casa. Ainda, o seu filho de 09 anos tem asma, portanto necessita de tratamento contínuo e atenção redobrada.   |**Hobbies, história:** almeja conseguir conciliar os diferentes papéis que exerce, pois atualmente está se sentindo extremamente sobrecarregada e por isso busca métodos para otimizar o seu tempo e esforço.
+<img src="https://github.com/ICEI-PUC-Minas-PPC-CC/Template-MentoringII/blob/main/docs/img/camilafiaes.png" width="200" height="200"/>|**Idade:** 17 anos.<br>**Naturalidade:** Santo André - SP.<br>**Ocupação:** Estudante.       |**Atribuições:** Estudante do ensino médio da rede estadual. 
+|**Motivações:** Quer um direcionamento na área de programação para começar os estudos durante o ensino médio para ganhar um tempo extra na formação profissional.  |**Frustações:** Está perdido na tecnologia devido aos diferentes ramos que  permeiam o assunto e ainda não sabe como começar os estudos.   |**Hobbies, história:** Desde cedo tem contato direto com a tecnologia e a internet e tem a visão de que o ramo tecnológico é promissor e ascendente, por isso, demonstra interesse em começar a estudar programação.
 
-Enumere e detalhe as personas da sua solução. Para isso, se necessário, leia um pouco mais sobre o assunto nos seguintes links:
+|**Larissa Santos**|           |                             | 
+|-------------------|-----------|-----------------------------|
+<img src="https://github.com/ICEI-PUC-Minas-PPC-CC/Template-MentoringII/blob/main/docs/img/camilafiaes.png" width="200" height="200"/>|**Idade:** 22 anos.<br>**Naturalidade:** Itaí - SP.<br>**Ocupação:** Atendente de loja.       |**Atribuições:** Trabalha com atendimento ao público em uma loja de roupas, estudante autodidata de programação. 
+|**Motivações:** Deseja aprimorar seus conhecimentos em programação para em um futuro próximo conseguir um emprego definitivo na área.  |**Frustações:** Se sente perdida em meio aos avanços da tecnologia e ainda não sabe aprimorar seus conhecimentos.   |**Hobbies, história:** Atualmente trabalha como atendente para complementar a sua renda e almeja conseguir sua primeira vaga no mercado de tecnologia.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes/beneficiários ideais que sua solução almeja.
-
-Para selecionar as imagens de suas personas, utilize o site: https://this-person-does-not-exist.com/pt
+|**Anderson Mattos**|           |                             | 
+|-------------------|-----------|-----------------------------|
+<img src="https://github.com/ICEI-PUC-Minas-PPC-CC/Template-MentoringII/blob/main/docs/img/camilafiaes.png" width="200" height="200"/>|**Idade:** 31 anos.<br>**Naturalidade:** Niterói - SP.<br>**Ocupação:** Auxiliar administrativo.       |**Atribuições:** Ajuda a gerenciar documentos, pessoas, convoca reuniões e lida com finanças. 
+|**Motivações:** Quer saber as oportunidades que a carreira tecnológica oferece.  |**Frustações:** Encontra-se indeciso sobre a sua atual carreira profissional e deseja novos ares, mas, ainda não encontrou o seu novo lugar de fato.   |**Hobbies, história:** Quer ter o sucesso financeiro e profissional fazendo algo que gosta, sem ter que lidar com o estresse do dia a dia somado ao fato de que está fazendo algo que não lhe dá prazer.
 
 ## Histórias de Usuários
 
