@@ -25,21 +25,12 @@ Exemplo:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Camila Fiães | Otimizar meu tempo e esforço | Conciliar os diferentes papéis que exerço. |
-|Camila Fiães | Ter acesso rápido e completo às informações sobre a doença de seu filho | Passar os detalhes para os médicos. |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução ou para execução da sua prática extensionista/curso. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação e também para identificar as dores que sua prática extensionista irá minimizar/sanar. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
-
-## Obs.1: Caso seu grupo vá desenvolver uma solução de software, as seções "requisitos funcionais", "requisitos não funcionais" e "restrições" DEVERÃO ser PREENCHIDAS.
-## Obs.2: Caso seu grupo vá desenvolver algum atividade que demande, uma pesquisa de campo através de questinários, a seção "artefatos para levantamento de dados" DEVERÁ ser PREENCHIDA.
-## Obs.3: Caso seu grupo não vá desenvolver nem uma solução de software e nem uma atividade que demande pesquisa de campo, as seções a seguir DEVERÃO ser REMOVIDAS.
+|João Silva | Instruções | Iniciar meus estudos |
+|João Silva | Cronograma de estudos | Organizar meu tempo acadêmico |
+|Larissa Santos | Evoluir minhas habilidades | Conseguir meu primeiro emprego |
+|Larissa Santos | Direcionamento | Poupar tempo em meus estudos |
+|Anderson Mattos | Entender sobre a atuação da tecnologia no mercado de trabalho | Ponderar sobre a escolha de mudança de carreira |
+|Anderson Mattos | Aprender o básico sobre programação | Saber se a nova área que eu penso em seguir realmente é pra mim |
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
