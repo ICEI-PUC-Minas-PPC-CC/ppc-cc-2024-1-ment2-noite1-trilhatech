@@ -14,7 +14,7 @@
 
 |**Anderson Mattos**|           |                             | 
 |-------------------|-----------|-----------------------------|
-<img src="https://github.com/ICEI-PUC-Minas-PPC-CC/Template-MentoringII/blob/main/docs/img/camilafiaes.png" width="200" height="200"/>|**Idade:** 26 anos.<br>**Naturalidade:** Niterói - SP.<br>**Ocupação:** Auxiliar administrativo.       |**Atribuições:** Ajuda a gerenciar documentos, pessoas, convoca reuniões e lida com finanças. 
+<img src="https://github.com/ICEI-PUC-Minas-PPC-CC/ppc-cc-2024-1-ment2-noite1-trilhatech/blob/main/docs/img/andersonmattos.png" width="200" height="200"/>|**Idade:** 26 anos.<br>**Naturalidade:** Niterói - SP.<br>**Ocupação:** Auxiliar administrativo.       |**Atribuições:** Ajuda a gerenciar documentos, pessoas, convoca reuniões e lida com finanças. 
 |**Motivações:** Quer saber as oportunidades que a carreira tecnológica oferece.  |**Frustações:** Encontra-se indeciso sobre a sua atual carreira profissional e deseja novos ares, mas, ainda não encontrou o seu novo lugar de fato.   |**Hobbies, história:** Quer ter o sucesso financeiro e profissional fazendo algo que gosta, sem ter que lidar com o estresse do dia a dia somado ao fato de que está fazendo algo que não lhe dá prazer.
 
 ## Histórias de Usuários
