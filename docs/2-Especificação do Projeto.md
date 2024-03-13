@@ -49,8 +49,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo | MÉDIA | 
-|RNF-002| o sistema deve processar requisições do usuário em, no máximo, 3s |  BAIXA | 
+|RNF-001| A aplicação deve ser responsiva | ALTA | 
+|RNF-002| A aplicação deve ser desenvolvida considerando as Heurísticas de usabilidade de Nielsen |  ALTA | 
+|RNF-003| A aplicação deve ser construída de forma componentizada | ALTA |
+|RNF-004| A aplicação deve ser construída com a biblioteca React do Javascript | ALTA |
+|RNF-005| A aplicação deve utilizar ferramentas disponíveis na maior parte dos navegadores web | MÉDIA |
+|RNF-006| Os conteúdos baixados da aplicação devem ser no formato PDF | MÉDIA |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
