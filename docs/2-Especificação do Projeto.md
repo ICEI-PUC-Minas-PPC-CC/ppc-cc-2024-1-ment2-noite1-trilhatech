@@ -42,7 +42,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-002| A aplicação deve permitir que os conteúdos apresentados possam ser baixados em PDF | ALTA |
 |RF-003| A aplicação deve permitir que seja vinculado a cada conteúdo um ou mais testes de conhecimento. Cada teste deverá ter um  nível de dificuldade (Fácil, médio e difícil) | ALTA |
 |RF-004| A aplicação deve verificar se cada resposta está correta ou não | ALTA |
-|RF-004| Ao término de cada teste a aplicação deve gerar um relatório de erros/acertos | MÉDIA |
+|RF-005| Ao término de cada teste a aplicação deve gerar um relatório de erros/acertos | MÉDIA |
 
 
 ### Requisitos não Funcionais
