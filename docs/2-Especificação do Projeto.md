@@ -38,8 +38,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| O sistema deverá permitir o gerenciamento dos pacientes | ALTA | 
-|RF-002| O sistema deverá exibir todo histórico de atendimento do paciente   | ALTA |
+|RF-001| A aplicação deve apresentar conteúdos educativos sobre programação | ALTA | 
+|RF-002| A aplicação deve permitir que os conteúdos apresentados possam ser baixados em PDF | ALTA |
+|RF-003| A aplicação deve permitir que seja vinculado a cada conteúdo um ou mais testes de conhecimento. Cada teste deverá ter um  nível de dificuldade (Fácil, médio e difícil) | ALTA |
+|RF-004| A aplicação deve verificar se cada resposta está correta ou não | ALTA |
+|RF-004| Ao término de cada teste a aplicação deve gerar um relatório de erros/acertos | MÉDIA |
 
 
 ### Requisitos não Funcionais
