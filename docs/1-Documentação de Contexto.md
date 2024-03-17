@@ -14,8 +14,30 @@
 
 ## Justificativa
 
-O que motivou a escolha deste tema foi observar que o processo contínuo de evolução das tecnologias e linguagens de programação nem sempre caminham do lado de quem está ingressando nesta área, gerando desistência ou lacunas de conhecimentos em estudantes que se perdem logo no início da sua jornada de aprendizado. Portanto, oferecer suporte e direcionamento àqueles que desejam começar os estudos, educando com base nos princípios da programação, de maneira intuitiva e amigável, para que se disponha um cenário mais positivo e animador.
+ Segundo o Google, o Brasil terá déficit de 530 mil profissionais de tecnologia até 2025. Noticiado pelo G1, o estudo produzido em parceria com a Associação Brasileira de Startups revela que formarão cerca de 53 mil profissionais na área de tecnologia entre 2021 e 2025, sendo que a demanda por novos talentos será de aproximadamente 800 mil e, segundo o relatório, os principais causadores desse déficit são:
+
+O ensino de pensamento lógico está defasado nas escolas brasileiras;
+
+
+Existem grandes barreiras para pessoas negras e mulheres no mercado de tecnologia;
+
+
+O mercado de TI no Brasil não desenvolve o número de profissionais seniores que deveria;
+
+
+A dificuldade de conseguir o primeiro emprego em tecnologia faz com que os jovens busquem outras áreas;
+
+
+Existem grandes limitações para pessoas de regiões distantes dos grandes centros do país;
+
+
+Existem condições muito mais atrativas internacionalmente, esvaziando o mercado nacional.
+
+
+ O que motivou a escolha deste tema foi observar que o processo contínuo de evolução das tecnologias e linguagens de programação nem sempre caminham ao lado de quem está ingressando nesta área, gerando desistência ou lacunas de conhecimentos em estudantes que se perdem logo no início da sua jornada de aprendizado. Portanto, oferecer suporte e direcionamento àqueles que desejam começar os estudos, educando com base nos princípios da programação, de maneira intuitiva e amigável, para que se disponha um cenário mais positivo e animador.
+
+<img src="https://github.com/ICEI-PUC-Minas-PPC-CC/ppc-cc-2024-1-ment2-noite1-trilhatech/blob/main/docs/img/taxaDesistenciaAcumulada.png" width="924" height="434"/>
 
 ## Público-Alvo
 
-O projeto TrilhaTech é destinado àqueles que pretendem iniciar na área da programação e necessitam de suporte para construir uma base sólida e promissora, além disso, aqueles que também já ingressaram nos estudos e se sentem perdidos em relação ao que devem investir em seus estudos.
+O projeto TrilhaTech é destinado a jovens e adolescentes que pretendem iniciar na área da programação e necessitam de suporte para construir uma base sólida e promissora, além disso, aqueles que também já ingressaram nos estudos e se sentem perdidos em relação ao que devem investir em seus estudos.
