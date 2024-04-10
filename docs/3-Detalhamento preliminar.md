@@ -20,9 +20,14 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
 
-## User Flow
+## User Flow 1
 
-![Exemplo de UserFlow](img/userflow.jpg)
+![UserFlow 1](https://github.com/ICEI-PUC-Minas-PPC-CC/ppc-cc-2024-1-ment2-noite1-trilhatech/blob/431c7d2e75e1cab241ebbb1fc76d590cd3e2278a/docs/img/UserFlow1.jpeg)
+
+## User Flow 2
+![UserFlow 2](https://github.com/ICEI-PUC-Minas-PPC-CC/ppc-cc-2024-1-ment2-noite1-trilhatech/blob/431c7d2e75e1cab241ebbb1fc76d590cd3e2278a/docs/img/UserFlow2.jpeg)
+
+## Link para o User Flow interativo: https://www.figma.com/file/5KVoTWdj7ipKOIRp7oOBxR/TrilhaTech?type=design&node-id=0%3A1&mode=design&t=ETgc2GuU7YiI2om6-1
 
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
