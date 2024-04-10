@@ -1,11 +1,7 @@
 # 1) Objetivos de Desenvolvimento Sustentável
 
-Os 17 objetivos de Desenvolvimento Sustentável defnidos pela ONU (Organização das Nações Unidas) para as cidades, como parte da Agenda 2023, abrangem diferentes temas relacionados a aspectos sociais e ambientais.
+Os 17 Objetivos de Desenvolvimento Sustentável promovem ações globais para acabar com a pobreza, desigualdades e proteção ao meio ambiente em prol da paz e prosperidade. A TrilhaTech, como aplicação educacional, tem como objetivo proporcionar o acesso à Educação de Qualidade(objetivo 4) para introduzir o ambiente de programação aos estudantes do ensino tradicional brasileiro. Consequentemente, proporcionar um ensino de qualidade promove também Trabalho Decente e Crescimento Econômico(objetivo 8), pois apresentando a possibilidade de ingressar na área da computação permite que pessoas antes leigas possam garantir um futuro promissor e se desenvolver economicamente, visto que essa área está com déficit de profissionais, e também Redução de Desigualdades(objetivo 10), visto que o acesso limitado a educação é parte da desigualdade social. Divulgar o conhecimento computacional permite que todas as pessoas, independente de tonalidade de pele, crença, gênero e posição social possam agregar positivamente para um ambiente profissional.
 
-Neste sentido, neste seção, seu grupo deverá contextualizar e justificar em qual dos 17 objetivos de Desenvolvimento Sustentável a temática do problema que seu grupo deseja resolver se encaixa.
-
-> Links úteis:
-> - [Os 17 Objetivos de Desenvolvimento Sustentável](https://brasil.un.org/pt-br/sdgs)
 
 
 # 2) Detalhamento preliminar
