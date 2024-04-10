@@ -33,10 +33,14 @@ Existem grandes limitações para pessoas de regiões distantes dos grandes cent
 
 Existem condições muito mais atrativas internacionalmente, esvaziando o mercado nacional.
 
+ O gráfico a seguir refere-se à taxa de desistência nas principais áreas de ensino superior. Observa-se uma grande quantidade percentual na área de computação.
+
+<img src="https://github.com/ICEI-PUC-Minas-PPC-CC/ppc-cc-2024-1-ment2-noite1-trilhatech/blob/main/docs/img/taxaDesistenciaAcumulada.png" width="924" height="434"/>
+
 
  O que motivou a escolha deste tema foi observar que o processo contínuo de evolução das tecnologias e linguagens de programação nem sempre caminham ao lado de quem está ingressando nesta área, gerando desistência ou lacunas de conhecimentos em estudantes que se perdem logo no início da sua jornada de aprendizado. Portanto, oferecer suporte e direcionamento àqueles que desejam começar os estudos, educando com base nos princípios da programação, de maneira intuitiva e amigável, para que se disponha um cenário mais positivo e animador.
 
-<img src="https://github.com/ICEI-PUC-Minas-PPC-CC/ppc-cc-2024-1-ment2-noite1-trilhatech/blob/main/docs/img/taxaDesistenciaAcumulada.png" width="924" height="434"/>
+
 
 ## Público-Alvo
 
