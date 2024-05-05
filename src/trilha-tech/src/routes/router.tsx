@@ -8,6 +8,7 @@ import {CourseLevelSelection} from '../components/CourseLevelSelection'
 import { ContentSelection } from '../components/ContentSelection'
 import { Content } from '../components/Content'
 import { NotFound } from '../pages/NotFound'
+import { DiscoverCourses } from '../components/DiscoverCourses'
 
 export const appRouter = createBrowserRouter([
     {
@@ -15,7 +16,7 @@ export const appRouter = createBrowserRouter([
         element: <Dashboard />,
         children: [
             {
-                path: "CourseLevel",
+                path: "CourseLevel/:course",
                 element: <CourseLevelSelection />
             },
             {
@@ -25,6 +26,10 @@ export const appRouter = createBrowserRouter([
             {
                 path: "/ContentSelection/:level/Content/:id",
                 element: <Content />
+            },
+            {
+                path: "",
+                element: <DiscoverCourses />
             }
         ]
     },
