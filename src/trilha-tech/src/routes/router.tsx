@@ -20,7 +20,7 @@ export const appRouter = createBrowserRouter([
                 element: <CourseLevelSelection />
             },
             {
-                path: "ContentSelection/:level",
+                path: "ContentSelection/:course/:level",
                 element: <ContentSelection />,
             },
             {
