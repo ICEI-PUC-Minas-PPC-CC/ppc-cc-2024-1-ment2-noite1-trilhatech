@@ -1,25 +1,34 @@
-export interface CourseProps {
+
+
+export type CourseTyoe = 'frontend' | 'logicaprogramacao'
+
+export type LevelType = 'basic' | 'intermediate' | 'advanced'
+
+export interface ContentProps {
     id: number,
     title: string,
     videoUrl: string,
     durationInMinutes: number,
     workBook: string,
-    level: "basic" | "intermediate" | "advanced",
+    level: LevelType,
 }
 
-export interface courseDataBaseProps {
-   [key: string]: {
-        name: string,
-        description: string,
-        [key: string]: string | CourseProps[],
+type CourseDataBase = {
+    [key in CourseTyoe]: {
+        name: string;
+        description: string;
+        basic: ContentProps[];
+        intermediate: ContentProps[];
+        advanced: ContentProps[];
     }
 }
 
-export const coursesDatabase: courseDataBaseProps = {
-    "logicaprogramacao": {
+
+export const coursesDatabase: CourseDataBase = {
+    logicaprogramacao: {
         name: "Lógica de programação",
         description: "Texto do curso de lógica",
-        "basic": [
+        basic: [
             {
                 id: 1,
                 title: "Configurando a IDE",
@@ -37,7 +46,7 @@ export const coursesDatabase: courseDataBaseProps = {
                 level: "basic",
             },
         ],
-        "intermediate": [
+        intermediate: [
             {
                 id: 10,
                 title: "Repetição",
@@ -46,29 +55,60 @@ export const coursesDatabase: courseDataBaseProps = {
                 workBook: "apostila_c.pdf",
                 level: "basic",
             },
+        ],
+        advanced: [
+            {
+                title: "Test",
+                durationInMinutes: 10,
+                id: 10,
+                level: "advanced",
+                videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
+                workBook: "apostila_c.pdf"
+            }
         ]
     },
-    "frontend": {
-        name: "Front-end",
-        description: "Texto do curso de Front end",
-        "basic": [
+    frontend: {
+        name: "Front end",
+        description: "Descrição do front end",
+         basic: [
             {
-                id: 3,
-                title: "Configurando o Vs Code",
+                id: 1,
+                title: "Configurando a IDE",
                 videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
                 durationInMinutes: 8.27,
                 workBook: "apostila_c.pdf",
                 level: "basic",
             },
             {
-                id: 4,
-                title: "Css",
+                id: 2,
+                title: "Variáveis",
                 videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
                 durationInMinutes: 8.27,
                 workBook: "apostila_c.pdf",
                 level: "basic",
             },
+        ],
+        intermediate: [
+            {
+                id: 10,
+                title: "Repetição",
+                videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
+                durationInMinutes: 8.27,
+                workBook: "apostila_c.pdf",
+                level: "basic",
+            },
+        ],
+        advanced: [
+            {
+                title: "Test",
+                durationInMinutes: 10,
+                id: 10,
+                level: "advanced",
+                videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
+                workBook: "apostila_c.pdf"
+            }
         ]
-    },
+    }
+    
     
 }

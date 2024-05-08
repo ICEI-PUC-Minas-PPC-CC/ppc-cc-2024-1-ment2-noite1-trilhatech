@@ -1,16 +1,16 @@
-import { Link, useParams } from "react-router-dom";
-import { coursesDatabase, CourseProps } from "../data/databse";
+import { useParams } from "react-router-dom";
+import { coursesDatabase, ContentProps, CourseTyoe, LevelType } from "../data/databse";
 import { useEffect, useState } from "react";
 
 export function ContentSelection() {
   type Content = {
-    level: "basic" | "intermediate" | "advanced";
-    course: string;
+    level: LevelType;
+    course: CourseTyoe;
   };
-  const { level, course } = useParams<Content>();
-  const [contents, setContents] = useState<CourseProps[] | string>([]);
+  const { level, course } = useParams<NonNullable<Content>>();
+  const [contents, setContents] = useState<ContentProps[] | string>([]);
   const [modalController, setModalController] = useState<boolean>(false);
-  const [modalContentSelected, setModalContentSelected] = useState<CourseProps | null>();
+  const [modalContentSelected, setModalContentSelected] = useState<ContentProps | null>();
 
   useEffect(() => {
     if (level && course) {
@@ -23,7 +23,7 @@ export function ContentSelection() {
     return `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
   }
 
-  function getCourseContentTitle(course: string, level: string){
+  function getCourseContentTitle(course: CourseTyoe, level: string){
          switch(level){
             case "basic":
               level = "básico";
