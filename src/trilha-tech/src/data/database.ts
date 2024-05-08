@@ -1,5 +1,4 @@
 
-
 export type CourseTyoe = 'frontend' | 'logicaprogramacao'
 
 export type LevelType = 'basic' | 'intermediate' | 'advanced'
@@ -30,7 +29,7 @@ export const coursesDatabase: CourseDataBase = {
         description: `Sugerimos que comece pelo básico onde ensinamos a instalar
                     e preparar a interface de desenvolvimento para seguirmos
                     com a trilha!`,
-        "basic": [
+        basic: [
             {
                 id: 1,
                 title: "Configurando a IDE",

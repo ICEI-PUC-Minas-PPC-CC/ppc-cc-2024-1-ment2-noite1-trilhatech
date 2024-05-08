@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { coursesDatabase, ContentProps, CourseTyoe, LevelType } from "../data/databse";
+import { coursesDatabase, ContentProps, CourseTyoe, LevelType } from "../data/database";
 import { useEffect, useState } from "react";
 
 export function ContentSelection() {
