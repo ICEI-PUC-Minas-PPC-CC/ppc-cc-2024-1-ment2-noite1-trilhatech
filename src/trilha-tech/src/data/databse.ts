@@ -18,7 +18,9 @@ export interface courseDataBaseProps {
 export const coursesDatabase: courseDataBaseProps = {
     "logicaprogramacao": {
         name: "Lógica de programação",
-        description: "Texto do curso de lógica",
+        description: `Sugerimos que comece pelo básico onde ensinamos a instalar
+                    e preparar a interface de desenvolvimento para seguirmos
+                    com a trilha!`,
         "basic": [
             {
                 id: 1,
@@ -50,7 +52,8 @@ export const coursesDatabase: courseDataBaseProps = {
     },
     "frontend": {
         name: "Front-end",
-        description: "Texto do curso de Front end",
+        description: `Comece pela trilha básica pra ensinarmos a estruturação
+                    de uma página web com o começo do HTML`,
         "basic": [
             {
                 id: 3,

@@ -20,7 +20,7 @@ export function DiscoverCourses() {
             title="Lógica de programaçao"
             buttonLabel="Começar"
             content={["Algoritmos", "Varáveis", "Condicionais"]}
-            buttonTo="/CourseLevel/ProgramingLogic"
+            buttonTo="/CourseLevel/logicaprogramacao"
           />
         </div>
         <div className="hidden md:flex flex-1">
@@ -39,13 +39,13 @@ export function DiscoverCourses() {
             title="Lógica de programaçao"
             buttonLabel="Começar"
             content={["Algoritmos", "Varáveis", "Condicionais"]}
-            buttonTo="/CourseLevel/ProgramingLogic"
+            buttonTo="/CourseLevel/logicaprogramacao"
           />
           <CourseInformationCard
             title="Front-end"
             buttonLabel="Começar"
             content={["HTML", "CSS"]}
-            buttonTo="/CourseLevel/FrontEnd"
+            buttonTo="/CourseLevel/frontend"
           />
         </div>
       </section>
