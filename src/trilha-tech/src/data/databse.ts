@@ -27,8 +27,10 @@ type CourseDataBase = {
 export const coursesDatabase: CourseDataBase = {
     logicaprogramacao: {
         name: "Lógica de programação",
-        description: "Texto do curso de lógica",
-        basic: [
+        description: `Sugerimos que comece pelo básico onde ensinamos a instalar
+                    e preparar a interface de desenvolvimento para seguirmos
+                    com a trilha!`,
+        "basic": [
             {
                 id: 1,
                 title: "Configurando a IDE",
@@ -67,10 +69,11 @@ export const coursesDatabase: CourseDataBase = {
             }
         ]
     },
-    frontend: {
-        name: "Front end",
-        description: "Descrição do front end",
-         basic: [
+    "frontend": {
+        name: "Front-end",
+        description: `Comece pela trilha básica pra ensinarmos a estruturação
+                    de uma página web com o começo do HTML`,
+        "basic": [
             {
                 id: 1,
                 title: "Configurando a IDE",
