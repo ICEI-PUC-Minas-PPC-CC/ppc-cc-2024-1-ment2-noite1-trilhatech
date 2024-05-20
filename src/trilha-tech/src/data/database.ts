@@ -114,3 +114,205 @@ export const coursesDatabase: CourseDataBase = {
     
     
 }
+
+
+export interface QuestionProps {
+    question: string;
+    includedContents: Array<string>
+    answers: Array<{
+        answerTitle: string;
+        isCorrect: boolean;
+    }>
+}
+
+export type QuizDataBaseType = {
+    [key in CourseTyoe]: {
+        basic: {
+            questions: Array<QuestionProps>
+        }
+        intermediate: {
+            questions: Array<QuestionProps>
+        }
+        advanced: {
+            questions: Array<QuestionProps>
+        }
+    }
+}
+
+
+export const QuizDataBase: QuizDataBaseType = {
+    logicaprogramacao: {
+        basic: {
+            questions: [
+                {
+                    question: "Qual dos seguintes tipos armazena um dado do tipo inteiro?",
+                    includedContents: ['variaveis', 'tipos de dados'],
+                    answers: [
+                        {
+                            answerTitle: "float",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "int",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "char",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "double",
+                            isCorrect: false
+                        },
+                    ]
+                }
+            ]
+        },
+        intermediate: {
+            questions: [
+                {
+                    question: "Qual o operador do tipo 'ou'?",
+                    includedContents: ['Condicionais', 'Operadores relacionais', 'Operadores lógicos'],
+                    answers: [
+                        {
+                            answerTitle: "&&",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "||",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "!",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "!=",
+                            isCorrect: false
+                        },
+                    ]
+                }
+            ]
+        },
+         advanced: {
+            questions: [
+                {
+                    question: "Um loop for iniciado em i = 0 e repetido até atingir a condição de i = 5 irá se repetir quantas vezes?",
+                    includedContents: ['variaveis', 'tipos de dados'],
+                    answers: [
+                        {
+                            answerTitle: "5",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "4",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "3",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "6",
+                            isCorrect: false
+                        },
+                    ]
+                }
+            ]
+        }
+    },
+    frontend: {
+        basic: {
+            questions: [
+                {
+                    question: "Qual dos seguintes tipos armazena um dado do tipo inteiro?",
+                    includedContents: ['variaveis', 'tiposdedados'],
+                    answers: [
+                        {
+                            answerTitle: "float",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "int",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "char",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "double",
+                            isCorrect: false
+                        },
+                    ]
+                },
+                {
+                    question: "HTML é uma linguagem de programação?",
+                    includedContents: ['variaveis', 'tipos de dados'],
+                    answers: [
+                        {
+                            answerTitle: "Verdadeiro",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Falso",
+                            isCorrect: true
+                        }
+                    ]
+                }
+            ]
+        },
+        intermediate: {
+            questions: [
+                {
+                    question: "Qual o operador do tipo 'ou'?",
+                    includedContents: ['Condicionais', 'Operadores relacionais', 'Operadores lógicos'],
+                    answers: [
+                        {
+                            answerTitle: "&&",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "||",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "!",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "!=",
+                            isCorrect: false
+                        },
+                    ]
+                }
+            ]
+        },
+         advanced: {
+            questions: [
+                {
+                    question: "Um loop for iniciado em i = 0 e repetido até atingir a condição de i = 5 irá se repetir quantas vezes?",
+                    includedContents: ['variaveis', 'tipos de dados'],
+                    answers: [
+                        {
+                            answerTitle: "5",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "4",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "3",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "6",
+                            isCorrect: false
+                        },
+                    ]
+                }
+            ]
+        }
+    },
+}

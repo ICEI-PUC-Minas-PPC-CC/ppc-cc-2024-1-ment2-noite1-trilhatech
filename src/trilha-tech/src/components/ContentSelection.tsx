@@ -1,6 +1,7 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { coursesDatabase, ContentProps, CourseTyoe, LevelType } from "../data/database";
 import { useEffect, useState } from "react";
+import { getCourseContentTitle } from "../utils/getCourseContentTitle";
 
 export function ContentSelection() {
   type Content = {
@@ -10,7 +11,6 @@ export function ContentSelection() {
   const { level, course } = useParams<NonNullable<Content>>();
   const [contents, setContents] = useState<ContentProps[] | string>([]);
   const [modalController, setModalController] = useState<boolean>(false);
-  const [modalContentSelected, setModalContentSelected] = useState<ContentProps | null>();
 
   useEffect(() => {
     if (level && course) {
@@ -21,22 +21,6 @@ export function ContentSelection() {
   function getVideoThumbnail(videoUrl: string) {
     const id = videoUrl.substring(videoUrl.length - 11);
     return `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
-  }
-
-  function getCourseContentTitle(course: CourseTyoe, level: string){
-         switch(level){
-            case "basic":
-              level = "básico";
-              break;
-            case 'intermediate':
-              level = 'intermediário';
-              break;
-            case 'advanced':
-              level = 'avançado';
-              break;
-        }
-
-      return `Curso ${level} de ${coursesDatabase[course].name}` 
   }
 
   return (
@@ -51,11 +35,10 @@ export function ContentSelection() {
         {typeof contents !== "string" &&
           contents.map((content) => {
             return (
-              <div
+              <Link
                 key={content.id}
-                // to={"/ContentSelection/:basic/Content/:123124234"}
+                to={"/ContentSelection/:basic/Content/:123124234"}
                 className="flex flex-col gap-2 bg-slate-700 p-4 rounded-md border-2 border-transparent hover:border-lime-400 hover:shadow-lg transition-all delay-75 ease-in-out"
-                 onClick={() => setModalController(!modalController)}
               >
                 <img
                   className="h-60 w-80 rounded-lg"
@@ -68,13 +51,10 @@ export function ContentSelection() {
                   </h2>
                   <span className="font-medium text-lg">00:08:27</span>
                 </div>
-              </div>
+              </Link>
             );
           })}
       </div>
-      <dialog open={modalController} className="">
-        <h1>Aberto</h1>
-      </dialog>
     </div>
   );
 }

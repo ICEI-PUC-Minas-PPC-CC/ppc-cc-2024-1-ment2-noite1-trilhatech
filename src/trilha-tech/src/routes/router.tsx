@@ -9,6 +9,7 @@ import { ContentSelection } from '../components/ContentSelection'
 import { Content } from '../components/Content'
 import { NotFound } from '../pages/NotFound'
 import { DiscoverCourses } from '../components/DiscoverCourses'
+import { Quiz } from '../pages/Quiz'
 
 export const appRouter = createBrowserRouter([
     {
@@ -24,7 +25,7 @@ export const appRouter = createBrowserRouter([
                 element: <ContentSelection />,
             },
             {
-                path: "/ContentSelection/:level/Content/:id",
+                path: "/ContentSelection/:level/:Content/:id",
                 element: <Content />
             },
             {
@@ -36,6 +37,10 @@ export const appRouter = createBrowserRouter([
     {
         path: '*',
         element: <NotFound />
+    },
+    {
+        path: 'Quiz/:Course/:Level/:Content',
+        element: <Quiz />
     }
 
 ])
