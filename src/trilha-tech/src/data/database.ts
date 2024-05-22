@@ -1,5 +1,5 @@
 
-export type CourseTyoe = 'frontend' | 'logicaprogramacao'
+export type CourseType = 'frontend' | 'logicaprogramacao'
 
 export type LevelType = 'basic' | 'intermediate' | 'advanced'
 
@@ -13,7 +13,7 @@ export interface ContentProps {
 }
 
 type CourseDataBase = {
-    [key in CourseTyoe]: {
+    [key in CourseType]: {
         name: string;
         description: string;
         basic: ContentProps[];
@@ -126,7 +126,7 @@ export interface QuestionProps {
 }
 
 export type QuizDataBaseType = {
-    [key in CourseTyoe]: {
+    [key in CourseType]: {
         basic: {
             questions: Array<QuestionProps>
         }
