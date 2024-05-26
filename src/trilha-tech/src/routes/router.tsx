@@ -25,7 +25,7 @@ export const appRouter = createBrowserRouter([
                 element: <ContentSelection />,
             },
             {
-                path: "/ContentSelection/:level/:Content/:id",
+                path: "/ContentSelection/:level/:course/:id",
                 element: <Content />
             },
             {

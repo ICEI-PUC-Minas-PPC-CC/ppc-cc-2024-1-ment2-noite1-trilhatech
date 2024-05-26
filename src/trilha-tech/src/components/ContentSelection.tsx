@@ -1,12 +1,12 @@
 import { useParams, Link } from "react-router-dom";
-import { coursesDatabase, ContentProps, CourseTyoe, LevelType } from "../data/database";
+import { coursesDatabase, ContentProps, CourseType, LevelType } from "../data/database";
 import { useEffect, useState } from "react";
 import { getCourseContentTitle } from "../utils/getCourseContentTitle";
 
 export function ContentSelection() {
   type Content = {
     level: LevelType;
-    course: CourseTyoe;
+    course: CourseType;
   };
   const { level, course } = useParams<NonNullable<Content>>();
   const [contents, setContents] = useState<ContentProps[] | string>([]);
@@ -37,7 +37,7 @@ export function ContentSelection() {
             return (
               <Link
                 key={content.id}
-                to={"/ContentSelection/:basic/Content/:123124234"}
+                to={"/ContentSelection/:basic/:logicaprogramacao/:123124234"} 
                 className="flex flex-col gap-2 bg-slate-700 p-4 rounded-md border-2 border-transparent hover:border-lime-400 hover:shadow-lg transition-all delay-75 ease-in-out"
               >
                 <img

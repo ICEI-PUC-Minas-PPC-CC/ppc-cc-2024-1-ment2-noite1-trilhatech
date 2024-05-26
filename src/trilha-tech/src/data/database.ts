@@ -10,6 +10,7 @@ export interface ContentProps {
     durationInMinutes: number,
     workBook: string,
     level: LevelType,
+    contents: Array<string>
 }
 
 type CourseDataBase = {
@@ -33,18 +34,20 @@ export const coursesDatabase: CourseDataBase = {
             {
                 id: 1,
                 title: "Configurando a IDE",
-                videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
+                videoUrl: "https://www.youtube.com/watch?v=baQLZxwRBuI",
                 durationInMinutes: 8.27,
                 workBook: "apostila_c.pdf",
                 level: "basic",
+                contents: ["introducao"]
             },
             {
                 id: 2,
                 title: "Variáveis",
-                videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
+                videoUrl: "https://youtu.be/B8BSUG_NoZg",
                 durationInMinutes: 8.27,
                 workBook: "apostila_c.pdf",
                 level: "basic",
+                 contents: ["introducao"]
             },
         ],
         intermediate: [
@@ -55,6 +58,7 @@ export const coursesDatabase: CourseDataBase = {
                 durationInMinutes: 8.27,
                 workBook: "apostila_c.pdf",
                 level: "basic",
+                 contents: ["introducao"]
             },
         ],
         advanced: [
@@ -64,7 +68,8 @@ export const coursesDatabase: CourseDataBase = {
                 id: 10,
                 level: "advanced",
                 videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
-                workBook: "apostila_c.pdf"
+                workBook: "apostila_c.pdf",
+                 contents: ["introducao"]
             }
         ]
     },
@@ -80,6 +85,7 @@ export const coursesDatabase: CourseDataBase = {
                 durationInMinutes: 8.27,
                 workBook: "apostila_c.pdf",
                 level: "basic",
+                 contents: ["introducao"]
             },
             {
                 id: 2,
@@ -88,16 +94,18 @@ export const coursesDatabase: CourseDataBase = {
                 durationInMinutes: 8.27,
                 workBook: "apostila_c.pdf",
                 level: "basic",
+                contents: ["introducao"]
             },
         ],
         intermediate: [
             {
                 id: 10,
-                title: "Repetição",
-                videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
+                title: "Estruturas condicionais",
+                videoUrl: "https://youtu.be/J0xjy722JP8",
                 durationInMinutes: 8.27,
                 workBook: "apostila_c.pdf",
                 level: "basic",
+                 contents: ["introducao"]
             },
         ],
         advanced: [
@@ -107,7 +115,8 @@ export const coursesDatabase: CourseDataBase = {
                 id: 10,
                 level: "advanced",
                 videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
-                workBook: "apostila_c.pdf"
+                workBook: "apostila_c.pdf",
+                 contents: ["introducao"]
             }
         ]
     }
@@ -145,27 +154,147 @@ export const QuizDataBase: QuizDataBaseType = {
         basic: {
             questions: [
                 {
-                    question: "Qual dos seguintes tipos armazena um dado do tipo inteiro?",
-                    includedContents: ['variaveis', 'tipos de dados'],
+                    question: "Qual o nome da IDE que estamos utilizando para aprender linguagem C?",
+                    includedContents: ["introducao"],
                     answers: [
                         {
-                            answerTitle: "float",
+                            answerTitle: "CLion",
                             isCorrect: false
                         },
                         {
-                            answerTitle: "int",
+                            answerTitle: "Code Blocks",
                             isCorrect: true
                         },
                         {
-                            answerTitle: "char",
+                            answerTitle: "Visual Studio",
                             isCorrect: false
                         },
                         {
-                            answerTitle: "double",
+                            answerTitle: "Pycharm",
                             isCorrect: false
                         },
                     ]
-                }
+                },
+                {
+                    question: "Qual a extensão de arquivo geralmente é usada por códigos em C?",
+                    includedContents: ["introducao"],
+                    answers: [
+                        {
+                            answerTitle: ".py",
+                            isCorrect: false,
+                        },
+                        {
+                            answerTitle: ".c",
+                            isCorrect: true,
+                        },
+                        {
+                            answerTitle: ".java",
+                            isCorrect: false,
+                        },
+                        {
+                            answerTitle: ".cpp",
+                            isCorrect: false
+                        }
+
+                    ]
+
+                },
+                {
+                    question: "Qual é a saída padrão do C?",
+                    includedContents: ["introducao"],
+                    answers: [
+                        {
+                            answerTitle: "Aba do navegador",
+                            isCorrect: false,
+                        },
+                        {
+                            answerTitle: "Documento de texto",
+                            isCorrect: false,
+                        },
+                        {
+                            answerTitle: "Terminal",
+                            isCorrect: true,
+                        },
+                        {
+                            answerTitle: "Impressora",
+                            isCorrect: false
+                        }
+
+                    ]
+
+                },
+                 {
+                    question: "O que significa IDE?",
+                    includedContents: ["introducao"],
+                    answers: [
+                        {
+                            answerTitle: "Integrated design Environment",
+                            isCorrect: false,
+                        },
+                        {
+                            answerTitle: "Integrated Development Environment",
+                            isCorrect: true,
+                        },
+                        {
+                            answerTitle: "Internal Development Engine",
+                            isCorrect: false,
+                        },
+                        {
+                            answerTitle: "Internal Design Engine",
+                            isCorrect: false
+                        }
+
+                    ]
+
+                },
+                 {
+                    question: "Qual é a principal função do C?",
+                    includedContents: ["introducao"],
+                    answers: [
+                        {
+                            answerTitle: "Principal()",
+                            isCorrect: false,
+                        },
+                        {
+                            answerTitle: "Start()",
+                            isCorrect: false,
+                        },
+                        {
+                            answerTitle: "main()",
+                            isCorrect: true,
+                        },
+                        {
+                            answerTitle: "run()",
+                            isCorrect: false
+                        }
+
+                    ]
+
+                },
+                 {
+                    question: "Qual dos comandos é utilizado para criar um comentário de uma única linha em C?",
+                    includedContents: ["introducao"],
+                    answers: [
+                        {
+                            answerTitle: "--",
+                            isCorrect: false,
+                        },
+                        {
+                            answerTitle: "/*",
+                            isCorrect: false,
+                        },
+                        {
+                            answerTitle: "comment:",
+                            isCorrect: false,
+                        },
+                        {
+                            answerTitle: "//",
+                            isCorrect: true
+                        }
+
+                    ]
+
+                },
             ]
         },
         intermediate: {

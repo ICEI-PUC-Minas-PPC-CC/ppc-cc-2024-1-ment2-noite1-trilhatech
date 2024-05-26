@@ -6,6 +6,20 @@ export function Questions() {
 
   const { questions, quizController, setQuizController } = useContext(QuizContextProvider)
 
+  function handleSelectColor(answer: number){
+
+      if(answer !== quizController.answerSelected){
+        return 'slate-300'
+      }
+
+      if(quizController.isAnswered === 'correct' || quizController.isAnswered === 'answering'){
+        return 'lime-400';
+      }else{
+        return 'red-500';
+      }
+
+  }
+
   return (
     <div className="w-full flex flex-col items-center gap-9 flex-1">
       <h1 className="font-bold text-4xl">
@@ -19,13 +33,13 @@ export function Questions() {
               key={i}
               onClick={() =>
                 quizController.answerSelected === i
-                  ? setQuizController({actualQuestion: quizController.actualQuestion, answerSelected: null})
-                  : setQuizController({actualQuestion: quizController.actualQuestion, answerSelected: i})
+                  ? setQuizController({actualQuestion: quizController.actualQuestion, answerSelected: null, isAnswered: 'answering'})
+                  : setQuizController({actualQuestion: quizController.actualQuestion, answerSelected: i, isAnswered: 'answering'})
               }
             >
               <span
                 className={`size-10 border border-transparent bg-${
-                  quizController.answerSelected === i ? "lime-400" : "slate-300"
+                 handleSelectColor(i)
                 } rounded-full flex items-center justify-center text-slate-700 font-semibold`}
               >
                 {String.fromCharCode(65 + i)}
