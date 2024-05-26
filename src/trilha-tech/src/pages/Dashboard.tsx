@@ -14,8 +14,8 @@ export function Dashboard() {
             Trilhas <ChevronDown size={14}/>
           </Link>
           <div className="flex flex-col gap-1/2 ml-2">
-            <Link className="hover:text-lime-400 text-base text-slate-300 font-medium" to="/CourseLevel/ProgramingLogic">Lógica de programação</Link>
-            <Link className="hover:text-lime-400 text-base text-slate-300 font-medium" to="/CourseLevel/FrontEnd">Front-end</Link>
+            <Link className="hover:text-lime-400 text-base text-slate-300 font-medium" to="/CourseLevel/logicaprogramacao">Lógica de programação</Link>
+            <Link className="hover:text-lime-400 text-base text-slate-300 font-medium" to="/CourseLevel/frontend">Front-end</Link>
           </div>
         </div>
       </nav>
