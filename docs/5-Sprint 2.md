@@ -5,7 +5,7 @@ Criar funcionalidade de Quiz
 - Questões
 - Validação
 - Prevenção de erros
-- Base do relatório final (não é versão final ainda)]
+- Base do relatório final (não é a versão final ainda)
 - Corrigindo bugs de rotas da sidebar
 
 Apostila(PDF)
@@ -16,6 +16,7 @@ Vídeo aulas HTML
 - Formatação de texto
 - Inserção de imagens e links
 - Atributos
+- [Playlist no youtube](https://www.youtube.com/playlist?list=PLrY4kuRO8ZyZM6hgWNzlfSBU04Afry9OO)
 
 Vídeo aulas C
 - Instalação CodeBlocks
