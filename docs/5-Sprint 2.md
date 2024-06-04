@@ -16,6 +16,9 @@ Vídeo aulas HTML
 - Formatação de texto
 - Inserção de imagens e links
 - Atributos
+- Listas e Tabelas
+- Div e Class
+- Estilização com CSS
 - [Playlist no youtube](https://www.youtube.com/playlist?list=PLrY4kuRO8ZyZM6hgWNzlfSBU04Afry9OO)
 
 Vídeo aulas C
