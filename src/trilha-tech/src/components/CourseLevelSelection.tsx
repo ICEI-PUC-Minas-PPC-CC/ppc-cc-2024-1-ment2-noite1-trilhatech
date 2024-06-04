@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import { CourseInformationCard } from "./CourseInformationCard";
-import { coursesDatabase, CourseTyoe, LevelType } from "../data/database";
+import { coursesDatabase, CourseType, LevelType } from "../data/database";
 
 export function CourseLevelSelection(){
-    const  {course} = useParams<{course: CourseTyoe}>();
+    const  {course} = useParams<{course: CourseType}>();
 
     function getContentArray(level: LevelType){
         if(course){
@@ -27,7 +27,7 @@ export function CourseLevelSelection(){
             <CourseInformationCard
                 title="Básico"
                 buttonLabel="Começar"
-                content={["Algoritmos", "Varáveis", "Condicionais"]}
+                content={["Configurando a IDE", "Texto"]}
                 buttonTo={`/ContentSelection/${course}/basic`}
              />
             </div>
@@ -39,13 +39,13 @@ export function CourseLevelSelection(){
                 <CourseInformationCard
                     title="Intermediário"
                     buttonLabel="Começar"
-                    content={["Algoritmos", "Varáveis", "Condicionais"]}
+                    content={["Tags semânticas"]}
                     buttonTo={`/ContentSelection/${course}/intermediate`}
                 />
                 <CourseInformationCard
                     title="Avançado"
                     buttonLabel="Começar"
-                    content={["HTML", "CSS"]}
+                    content={["Tabelas", "Formulários"]}
                     buttonTo={`/ContentSelection/${course}/advanced`}
                 />
                 </div>

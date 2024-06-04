@@ -19,7 +19,7 @@ export function DiscoverCourses() {
           <CourseInformationCard
             title="Lógica de programaçao"
             buttonLabel="Começar"
-            content={["Algoritmos", "Varáveis", "Condicionais"]}
+            content={["Algoritmos", "Varáveis", "Estruturas de repetição"]}
             buttonTo="/CourseLevel/logicaprogramacao"
           />
         </div>
@@ -38,13 +38,13 @@ export function DiscoverCourses() {
           <CourseInformationCard
             title="Lógica de programaçao"
             buttonLabel="Começar"
-            content={["Algoritmos", "Varáveis", "Condicionais"]}
+            content={["Algoritmos", "Varáveis", "Estruturas de repetição"]}
             buttonTo="/CourseLevel/logicaprogramacao"
           />
           <CourseInformationCard
             title="Front-end"
             buttonLabel="Começar"
-            content={["HTML", "CSS"]}
+            content={["HTML básico", "Tags semânticas"]}
             buttonTo="/CourseLevel/frontend"
           />
         </div>

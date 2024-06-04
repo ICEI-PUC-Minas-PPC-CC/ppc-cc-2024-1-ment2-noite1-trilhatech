@@ -1,6 +1,6 @@
- import { coursesDatabase, CourseTyoe } from '../data/database'
+ import { coursesDatabase, CourseType } from '../data/database'
  
- export function getCourseContentTitle(course: CourseTyoe, level: string){
+ export function getCourseContentTitle(course: CourseType, level: string){
          switch(level){
             case "basic":
               level = "básico";
@@ -16,6 +16,6 @@
       return `Curso ${level} de ${coursesDatabase[course].name}` 
 }
 
-export function getCourseName(course: CourseTyoe){
+export function getCourseName(course: CourseType){
     return coursesDatabase[course].name
 }

@@ -10,7 +10,6 @@ export function ContentSelection() {
   };
   const { level, course } = useParams<NonNullable<Content>>();
   const [contents, setContents] = useState<ContentProps[] | string>([]);
-  const [modalController, setModalController] = useState<boolean>(false);
 
   useEffect(() => {
     if (level && course) {
@@ -37,7 +36,7 @@ export function ContentSelection() {
             return (
               <Link
                 key={content.id}
-                to={"/ContentSelection/:basic/:logicaprogramacao/:123124234"} 
+                to={`/ContentSelection/${level}/${course}/${content.id}`} 
                 className="flex flex-col gap-2 bg-slate-700 p-4 rounded-md border-2 border-transparent hover:border-lime-400 hover:shadow-lg transition-all delay-75 ease-in-out"
               >
                 <img

@@ -23,9 +23,10 @@ export function QuizFooter({ handleIsAnswerCorrect }: QuizFooterProps) {
 
     function nextQuestion (){
 
-        if( quizController.answerSelected && handleIsAnswerCorrect(quizController.answerSelected)){
+        if( quizController.answerSelected !== null && handleIsAnswerCorrect(quizController.answerSelected)){
+          setQuizController({actualQuestion: quizController.actualQuestion, answerSelected: quizController.answerSelected, isAnswered: 'correct'})
           setTimeout(() => {
-            setQuizController({actualQuestion: quizController.actualQuestion+1, answerSelected: null, isAnswered: 'correct'})
+            setQuizController({actualQuestion: quizController.actualQuestion+1, answerSelected: null, isAnswered: 'answering'})
           }, 2000);
           const newQuizResults = {
             correctAnswers: quizResults.correctAnswers + 1,
@@ -35,7 +36,7 @@ export function QuizFooter({ handleIsAnswerCorrect }: QuizFooterProps) {
         }else{
           setQuizController({actualQuestion: quizController.actualQuestion, answerSelected: quizController.answerSelected, isAnswered: 'incorrect'})
            setTimeout(() => {
-            setQuizController({actualQuestion: quizController.actualQuestion+1, answerSelected: null, isAnswered: 'incorrect'})
+            setQuizController({actualQuestion: quizController.actualQuestion+1, answerSelected: null, isAnswered: 'answering'})
           }, 2000)
         }
     }

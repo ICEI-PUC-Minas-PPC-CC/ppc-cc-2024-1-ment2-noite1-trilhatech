@@ -38,12 +38,12 @@ export const coursesDatabase: CourseDataBase = {
                 durationInMinutes: 8.27,
                 workBook: "apostila_c.pdf",
                 level: "basic",
-                contents: ["introducao"]
+                contents: []
             },
             {
                 id: 2,
                 title: "Variáveis",
-                videoUrl: "https://youtu.be/B8BSUG_NoZg",
+                videoUrl: "https://www.youtube.com/watch?v=B8BSUG_NoZg",
                 durationInMinutes: 8.27,
                 workBook: "apostila_c.pdf",
                 level: "basic",
@@ -53,23 +53,23 @@ export const coursesDatabase: CourseDataBase = {
         intermediate: [
             {
                 id: 10,
-                title: "Repetição",
-                videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
+                title: "Operadores matemáticos e condicionais em C",
+                videoUrl: "https://www.youtube.com/watch?v=J0xjy722JP8",
                 durationInMinutes: 8.27,
                 workBook: "apostila_c.pdf",
                 level: "basic",
-                 contents: ["introducao"]
+                 contents: ["operadores"]
             },
         ],
         advanced: [
             {
-                title: "Test",
+                title: "Estruturas de repetição em C",
                 durationInMinutes: 10,
                 id: 10,
                 level: "advanced",
                 videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
                 workBook: "apostila_c.pdf",
-                 contents: ["introducao"]
+                 contents: ["repetição"]
             }
         ]
     },
@@ -158,12 +158,12 @@ export const QuizDataBase: QuizDataBaseType = {
                     includedContents: ["introducao"],
                     answers: [
                         {
-                            answerTitle: "CLion",
-                            isCorrect: false
-                        },
-                        {
                             answerTitle: "Code Blocks",
                             isCorrect: true
+                        },
+                        {
+                            answerTitle: "CLion",
+                            isCorrect: false
                         },
                         {
                             answerTitle: "Visual Studio",
@@ -271,7 +271,7 @@ export const QuizDataBase: QuizDataBaseType = {
                     ]
 
                 },
-                 {
+                {
                     question: "Qual dos comandos é utilizado para criar um comentário de uma única linha em C?",
                     includedContents: ["introducao"],
                     answers: [
@@ -295,13 +295,57 @@ export const QuizDataBase: QuizDataBaseType = {
                     ]
 
                 },
+                {
+                    question: "O que é uma variável?",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "Um espaço na memória dedicado a armazenar um valor",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "Um espaço na memória para armazenar um programa",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "A memória RAM do nosso computador",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Os valores digitados pelo usuário",
+                            isCorrect: false
+                        }
+                    ]
+                },
+                {
+                    question: "O que faz a função printf()?",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "Função para entrar com dados do usuário",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Função principal do nosso programa em C",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Função que mostra apenas números no terminal",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Função que mostra uma mensagem no terminal",
+                            isCorrect: true
+                        }
+                    ]
+                }
             ]
         },
         intermediate: {
             questions: [
                 {
                     question: "Qual o operador do tipo 'ou'?",
-                    includedContents: ['Condicionais', 'Operadores relacionais', 'Operadores lógicos'],
+                    includedContents: ['operadores'],
                     answers: [
                         {
                             answerTitle: "&&",

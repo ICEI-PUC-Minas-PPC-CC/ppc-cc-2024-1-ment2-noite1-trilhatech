@@ -1,22 +1,46 @@
 import { useContext} from 'react';
 import { QuizContextProvider } from '../../pages/Quiz';
 
+interface QuestionsProps {
+  handleIsAnswerCorrect: (answer: number) => boolean
+}
 
-export function Questions() {
+export function Questions( {handleIsAnswerCorrect}: QuestionsProps) {
 
   const { questions, quizController, setQuizController } = useContext(QuizContextProvider)
 
   function handleSelectColor(answer: number){
 
-      if(answer !== quizController.answerSelected){
-        return 'slate-300'
+    console.log(answer, quizController)
+
+      if(quizController.isAnswered === 'answering' && quizController.answerSelected !== answer){
+          return '#cbd5e1' 
       }
 
-      if(quizController.isAnswered === 'correct' || quizController.isAnswered === 'answering'){
-        return 'lime-400';
-      }else{
-        return 'red-500';
+      if(quizController.isAnswered === 'answering' && quizController.answerSelected === answer){
+          return '#a3e635';
       }
+
+      if(quizController.isAnswered === 'correct' &&  quizController.answerSelected === answer ){
+          return '#a3e635';
+      }
+
+      if(quizController.isAnswered === 'correct' &&  quizController.answerSelected !== answer ){
+           return '#cbd5e1' 
+      }
+
+      if(quizController.isAnswered === 'incorrect' &&  quizController.answerSelected !== answer && handleIsAnswerCorrect(answer) ){
+           return '#a3e635';
+      }
+
+      if(quizController.isAnswered === 'incorrect' &&  quizController.answerSelected !== answer && !handleIsAnswerCorrect(answer) ){
+           return '#cbd5e1' 
+      }
+
+      if(quizController.isAnswered === 'incorrect' &&  quizController.answerSelected === answer ){
+           return '#dc2626'
+      }
+      
 
   }
 
@@ -38,9 +62,8 @@ export function Questions() {
               }
             >
               <span
-                className={`size-10 border border-transparent bg-${
-                 handleSelectColor(i)
-                } rounded-full flex items-center justify-center text-slate-700 font-semibold`}
+                className={`size-10 border border-transparent rounded-full flex items-center justify-center text-slate-700 font-semibold`}
+                style={{background: handleSelectColor(i)}}
               >
                 {String.fromCharCode(65 + i)}
               </span>

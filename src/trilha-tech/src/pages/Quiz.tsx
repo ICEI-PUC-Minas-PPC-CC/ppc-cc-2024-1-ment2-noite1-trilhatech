@@ -46,7 +46,6 @@ export function Quiz(){
     const [questions, setQuestions] = useState<QuestionProps[]>([]);
     const [quizController, setQuizController] = useState<QuizControllerProps>({actualQuestion: 0, answerSelected: null, isAnswered: 'answering'})
     const [quizResults, setQuizResults] = useState<QuizResults>({totalQuestions: 5, correctAnswers: 0});
-
     const [quizFinished, setQuizFinished] = useState<boolean>(false);
 
     const navigate = useNavigate();
@@ -55,7 +54,16 @@ export function Quiz(){
    useEffect(() => {
         if(Content && Course && Level){
             const filteredQuestions = QuizDataBase[Course][Level].questions.filter((question) => question.includedContents.includes(Content) )
-            setQuestions(filteredQuestions.slice(0, filteredQuestions.length - 1))
+            const quizQuestions: QuestionProps[] = [];
+            while(quizQuestions.length < 5){
+                let randomQuestion = Math.floor(Math.random() * (filteredQuestions.length ));
+
+                if(!quizQuestions.includes(filteredQuestions[randomQuestion])){
+                    quizQuestions.push(filteredQuestions[randomQuestion]);
+                }
+            }
+
+            setQuestions(quizQuestions);
         }
    }, [])
 
@@ -83,8 +91,8 @@ export function Quiz(){
             {
                 !quizFinished ? 
                     <QuizContextProvider.Provider value={{questions, quizController, setQuizController, setQuizResults, quizResults, setQuizFinished: handleSetQuizFinished}}>
-                        <NavBar Course="frontend" />
-                        <Questions />
+                        <NavBar Course={Course && Course || "logicaprogramacao"} />
+                        <Questions  handleIsAnswerCorrect={handleAnswerIsCorrect} />
                         <QuizFooter  handleIsAnswerCorrect={handleAnswerIsCorrect} />
                     </QuizContextProvider.Provider>
                     :
