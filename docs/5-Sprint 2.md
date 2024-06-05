@@ -28,6 +28,9 @@ Vídeo aulas C
 - Estruturas de repetição(for, while e do while)
 - [Playlist no youtube](https://www.youtube.com/playlist?list=PLCY5bqBo89WxVTLbnLkoTzGZPlmN5VAPl)
 
+Feedback dos participantes
+- [Formulário](https://forms.gle/ZCehjSpX1ERpzhmbA)
+
 
 
 
