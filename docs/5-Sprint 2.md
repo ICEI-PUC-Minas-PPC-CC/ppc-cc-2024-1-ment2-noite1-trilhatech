@@ -25,6 +25,7 @@ Vídeo aulas C
 - Instalação CodeBlocks
 - Primeiro programa em C e conceito de variável
 - Operadores matemáticos e condicionais
+- Estruturas de repetição(for, while e do while)
 - [Playlist no youtube](https://www.youtube.com/playlist?list=PLCY5bqBo89WxVTLbnLkoTzGZPlmN5VAPl)
 
 
