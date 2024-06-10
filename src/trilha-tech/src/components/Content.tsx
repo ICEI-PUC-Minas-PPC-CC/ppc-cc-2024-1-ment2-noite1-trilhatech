@@ -28,6 +28,18 @@ export function Content(){
         setContentId((prev) => prev + 1);
    }
 
+   function downloadPdf(){
+    const link = document.createElement("a");
+    if(content && course  && level){
+        link.href = `/${content.workBook}`;
+        link.download = `${content.workBook}`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        }
+    
+    }
+
     return(
         <main className="mx-20 my-6 flex flex-col gap-14">
             <header className="w-full flex justify-center">
@@ -51,7 +63,7 @@ export function Content(){
                 <div className="flex flex-col gap-6">
                     <ReactPlayer url={content?.videoUrl} width={750} height={400} volume={0.4} controls={true} />
                     <div className="flex justify-between">
-                        <button className="px-10 py-3 bg-slate-300 rounded-2xl text-slate-900" >Material</button>
+                        <button className="px-10 py-3 bg-slate-300 rounded-2xl text-slate-900" onClick={()=>{downloadPdf()}}>Material</button>
                         <Link
                              className={`px-10 py-3 bg-lime-400 rounded-2xl text-lime-900`}
                              to={`/Quiz/${course}/${level}/${content?.contents}`}

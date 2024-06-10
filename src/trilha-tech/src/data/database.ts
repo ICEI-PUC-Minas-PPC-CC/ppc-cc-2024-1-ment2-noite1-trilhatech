@@ -36,7 +36,7 @@ export const coursesDatabase: CourseDataBase = {
                 title: "Configurando a IDE",
                 videoUrl: "https://www.youtube.com/watch?v=baQLZxwRBuI",
                 durationInMinutes: 8.27,
-                workBook: "apostila_c.pdf",
+                workBook: "apostilaC.pdf",
                 level: "basic",
                 contents: []
             },
@@ -45,7 +45,7 @@ export const coursesDatabase: CourseDataBase = {
                 title: "Variáveis",
                 videoUrl: "https://www.youtube.com/watch?v=B8BSUG_NoZg",
                 durationInMinutes: 8.27,
-                workBook: "apostila_c.pdf",
+                workBook: "apostilaC.pdf",
                 level: "basic",
                  contents: ["introducao"]
             },
@@ -56,7 +56,7 @@ export const coursesDatabase: CourseDataBase = {
                 title: "Operadores matemáticos e condicionais em C",
                 videoUrl: "https://www.youtube.com/watch?v=J0xjy722JP8",
                 durationInMinutes: 8.27,
-                workBook: "apostila_c.pdf",
+                workBook: "apostilaC.pdf",
                 level: "basic",
                  contents: ["operadores"]
             },
@@ -68,7 +68,7 @@ export const coursesDatabase: CourseDataBase = {
                 id: 10,
                 level: "advanced",
                 videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
-                workBook: "apostila_c.pdf",
+                workBook: "apostilaC.pdf",
                  contents: ["repetição"]
             }
         ]
@@ -83,7 +83,7 @@ export const coursesDatabase: CourseDataBase = {
                 title: "Configurando a IDE",
                 videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
                 durationInMinutes: 8.27,
-                workBook: "apostila_c.pdf",
+                workBook: "apostilaHTML.pdf",
                 level: "basic",
                  contents: ["introducao"]
             },
@@ -92,7 +92,7 @@ export const coursesDatabase: CourseDataBase = {
                 title: "Variáveis",
                 videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
                 durationInMinutes: 8.27,
-                workBook: "apostila_c.pdf",
+                workBook: "apostilaHTML.pdf",
                 level: "basic",
                 contents: ["introducao"]
             },
@@ -103,7 +103,7 @@ export const coursesDatabase: CourseDataBase = {
                 title: "Estruturas condicionais",
                 videoUrl: "https://youtu.be/J0xjy722JP8",
                 durationInMinutes: 8.27,
-                workBook: "apostila_c.pdf",
+                workBook: "apostilaHTML.pdf",
                 level: "basic",
                  contents: ["introducao"]
             },
@@ -115,7 +115,7 @@ export const coursesDatabase: CourseDataBase = {
                 id: 10,
                 level: "advanced",
                 videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
-                workBook: "apostila_c.pdf",
+                workBook: "apostilaHTML.pdf",
                  contents: ["introducao"]
             }
         ]
