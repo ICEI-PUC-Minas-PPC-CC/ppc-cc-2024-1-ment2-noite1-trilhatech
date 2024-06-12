@@ -12,7 +12,7 @@ Observação: A máquina que está sendo instalada a aplicação deve ter instal
 
 ## Instalação do Site
 
-Link de hospedagem da aplicação: <a href='https://trilha-tech-9psd2qxa1-joaooliveirazzs-projects.vercel.app'>Visite-nos</a>
+Link de hospedagem da aplicação: <a href='https://trilha-tech.vercel.app'>Visite-nos</a>
 
 ## Histórico de versões
 
