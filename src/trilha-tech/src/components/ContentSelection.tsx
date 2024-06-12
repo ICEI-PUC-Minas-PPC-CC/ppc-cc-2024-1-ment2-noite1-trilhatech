@@ -22,6 +22,21 @@ export function ContentSelection() {
     return `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
   }
 
+  function formatTime(durationInMinutes : number){
+    var minutes = Math.floor(durationInMinutes)
+    var seconds = Math.round((durationInMinutes - minutes) * 60);
+
+    if (seconds >= 60) {
+        seconds -= 60;
+        minutes += 1;
+    }
+
+    var formattedMinutes = String(minutes).padStart(2, '0');
+    var formattedSeconds = String(seconds).padStart(2, '0');
+    var formattedTime = `${formattedMinutes}:${formattedSeconds}`
+    return formattedTime
+  }
+
   return (
     <div className="px-16 flex flex-col gap-16">
       <h1 className="font-bold text-2xl">
@@ -48,7 +63,7 @@ export function ContentSelection() {
                   <h2 className="font-medium text-lg max-w-60 overflow-x-clip">
                     {content.title}
                   </h2>
-                  <span className="font-medium text-lg">00:08:27</span>
+                  <span className="font-medium text-lg">{formatTime(content.durationInMinutes)}</span>
                 </div>
               </Link>
             );

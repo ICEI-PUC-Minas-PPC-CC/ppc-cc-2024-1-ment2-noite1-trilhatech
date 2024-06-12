@@ -17,10 +17,11 @@ export function DiscoverCourses() {
             </p>
           </div>
           <CourseInformationCard
-            title="Lógica de programaçao"
+            title="Lógica de Programação"
             buttonLabel="Começar"
-            content={["Algoritmos", "Varáveis", "Estruturas de repetição"]}
+            content={["Algoritmos", "Variáveis", "Estruturas Condicionais", "Estruturas de Repetição"]}
             buttonTo="/CourseLevel/logicaprogramacao"
+            totalTime={2}
           />
         </div>
         <div className="hidden md:flex flex-1">
@@ -36,16 +37,18 @@ export function DiscoverCourses() {
         <h2 className="text-2xl text-slate-200">Trilhas</h2>
         <div className="flex gap-7 flex-wrap">
           <CourseInformationCard
-            title="Lógica de programaçao"
+            title="Lógica de Programação"
             buttonLabel="Começar"
-            content={["Algoritmos", "Varáveis", "Estruturas de repetição"]}
+            content={["Algoritmos", "Variáveis", "Estruturas Condicionais", "Estruturas de Repetição"]}
             buttonTo="/CourseLevel/logicaprogramacao"
+            totalTime={2}
           />
           <CourseInformationCard
             title="Front-end"
             buttonLabel="Começar"
-            content={["HTML básico", "Tags semânticas"]}
+            content={["HTML Básico", "Imagens e Links", "Listas e Tabelas", "Divs, Classes e CSS"]}
             buttonTo="/CourseLevel/frontend"
+            totalTime={3}
           />
         </div>
       </section>

@@ -11,7 +11,10 @@ export function NavBar({Course}: {
 
   return (
     <nav className="w-full px-36 py-6 flex justify-between items-center">
-      <span className="font-bold text-2xl">Logo</span>
+      <img
+            className="h-[120px] w-[120px] mt-10"
+            src= "/logo_final.svg"
+          />
       <span className="font-bold text-2xl">
         {Course && getCourseName(Course)}
       </span>

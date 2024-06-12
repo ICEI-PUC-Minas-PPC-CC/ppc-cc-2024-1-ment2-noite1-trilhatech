@@ -26,7 +26,7 @@ type CourseDataBase = {
 
 export const coursesDatabase: CourseDataBase = {
     logicaprogramacao: {
-        name: "Lógica de programação",
+        name: "Lógica de Programação",
         description: `Sugerimos que comece pelo básico onde ensinamos a instalar
                     e preparar a interface de desenvolvimento para seguirmos
                     com a trilha!`,
@@ -35,7 +35,7 @@ export const coursesDatabase: CourseDataBase = {
                 id: 1,
                 title: "Configurando a IDE",
                 videoUrl: "https://www.youtube.com/watch?v=baQLZxwRBuI",
-                durationInMinutes: 8.27,
+                durationInMinutes: 1.10,
                 workBook: "apostilaC.pdf",
                 level: "basic",
                 contents: []
@@ -44,7 +44,7 @@ export const coursesDatabase: CourseDataBase = {
                 id: 2,
                 title: "Variáveis",
                 videoUrl: "https://www.youtube.com/watch?v=B8BSUG_NoZg",
-                durationInMinutes: 8.27,
+                durationInMinutes: 7.36,
                 workBook: "apostilaC.pdf",
                 level: "basic",
                  contents: ["introducao"]
@@ -53,9 +53,9 @@ export const coursesDatabase: CourseDataBase = {
         intermediate: [
             {
                 id: 10,
-                title: "Operadores matemáticos e condicionais em C",
+                title: "Operadores e Estruturas Condicionais",
                 videoUrl: "https://www.youtube.com/watch?v=J0xjy722JP8",
-                durationInMinutes: 8.27,
+                durationInMinutes: 6.2,
                 workBook: "apostilaC.pdf",
                 level: "basic",
                  contents: ["operadores"]
@@ -67,31 +67,40 @@ export const coursesDatabase: CourseDataBase = {
                 durationInMinutes: 10,
                 id: 10,
                 level: "advanced",
-                videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
+                videoUrl: "https://www.youtube.com/watch?v=-rSE1_a7CgA",
                 workBook: "apostilaC.pdf",
-                 contents: ["repetição"]
+                 contents: ["repeticao"]
             }
         ]
     },
-    "frontend": {
-        name: "Front-end",
+    frontend: {
+        name: "Front-End",
         description: `Comece pela trilha básica pra ensinarmos a estruturação
                     de uma página web com o começo do HTML`,
-        "basic": [
+        basic: [
             {
                 id: 1,
-                title: "Configurando a IDE",
-                videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
-                durationInMinutes: 8.27,
+                title: "Instalação VSCode",
+                videoUrl: "https://www.youtube.com/watch?v=8t6nhBeRK3o",
+                durationInMinutes: 7.16,
                 workBook: "apostilaHTML.pdf",
                 level: "basic",
-                 contents: ["introducao"]
+                 contents: []
             },
             {
                 id: 2,
-                title: "Variáveis",
-                videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
-                durationInMinutes: 8.27,
+                title: "Formatação de Textos",
+                videoUrl: "https://www.youtube.com/watch?v=IfFt5o7v8rE",
+                durationInMinutes: 7.52,
+                workBook: "apostilaHTML.pdf",
+                level: "basic",
+                contents: ["introducao"]
+            },
+            {
+                id: 3,
+                title: "Imagens e Links",
+                videoUrl: "https://youtu.be/JwRCI1c2Tsk",
+                durationInMinutes: 7.47,
                 workBook: "apostilaHTML.pdf",
                 level: "basic",
                 contents: ["introducao"]
@@ -99,24 +108,42 @@ export const coursesDatabase: CourseDataBase = {
         ],
         intermediate: [
             {
-                id: 10,
-                title: "Estruturas condicionais",
-                videoUrl: "https://youtu.be/J0xjy722JP8",
-                durationInMinutes: 8.27,
+                id: 1,
+                title: "Style",
+                videoUrl: "https://www.youtube.com/watch?v=KvdLyxNu28A",
+                durationInMinutes: 5.54,
                 workBook: "apostilaHTML.pdf",
                 level: "basic",
-                 contents: ["introducao"]
+                contents: ["introducao"]
+            },
+            {
+                id: 2,
+                title: "Tabelas e Listas",
+                videoUrl: "https://www.youtube.com/watch?v=0JjhaoTtyTo",
+                durationInMinutes: 7.28,
+                workBook: "apostilaHTML.pdf",
+                level: "basic",
+                contents: ["introducao"]
             },
         ],
         advanced: [
             {
-                title: "Test",
-                durationInMinutes: 10,
-                id: 10,
+                id: 1,
+                title: "Divs e Classes",
+                durationInMinutes: 5.2,
                 level: "advanced",
-                videoUrl: "https://www.youtube.com/watch?v=gaSeRTDgt8U",
+                videoUrl: "https://youtu.be/NtERM11C_Q8",
                 workBook: "apostilaHTML.pdf",
-                 contents: ["introducao"]
+                contents: ["introducao"]
+            },
+            {
+                id: 2,
+                title: "CSS",
+                durationInMinutes: 20.34,
+                level: "advanced",
+                videoUrl: "https://www.youtube.com/watch?v=ArrkflVLnGo",
+                workBook: "apostilaHTML.pdf",
+                contents: ["introducao"]
             }
         ]
     }
@@ -364,90 +391,18 @@ export const QuizDataBase: QuizDataBaseType = {
                             isCorrect: false
                         },
                     ]
-                }
-            ]
-        },
-         advanced: {
-            questions: [
-                {
-                    question: "Um loop for iniciado em i = 0 e repetido até atingir a condição de i = 5 irá se repetir quantas vezes?",
-                    includedContents: ['variaveis', 'tipos de dados'],
-                    answers: [
-                        {
-                            answerTitle: "5",
-                            isCorrect: false
-                        },
-                        {
-                            answerTitle: "4",
-                            isCorrect: true
-                        },
-                        {
-                            answerTitle: "3",
-                            isCorrect: false
-                        },
-                        {
-                            answerTitle: "6",
-                            isCorrect: false
-                        },
-                    ]
-                }
-            ]
-        }
-    },
-    frontend: {
-        basic: {
-            questions: [
-                {
-                    question: "Qual dos seguintes tipos armazena um dado do tipo inteiro?",
-                    includedContents: ['variaveis', 'tiposdedados'],
-                    answers: [
-                        {
-                            answerTitle: "float",
-                            isCorrect: false
-                        },
-                        {
-                            answerTitle: "int",
-                            isCorrect: true
-                        },
-                        {
-                            answerTitle: "char",
-                            isCorrect: false
-                        },
-                        {
-                            answerTitle: "double",
-                            isCorrect: false
-                        },
-                    ]
                 },
                 {
-                    question: "HTML é uma linguagem de programação?",
-                    includedContents: ['variaveis', 'tipos de dados'],
+                    question: "Qual o operador do tipo 'e'?",
+                    includedContents: ['operadores'],
                     answers: [
-                        {
-                            answerTitle: "Verdadeiro",
-                            isCorrect: false
-                        },
-                        {
-                            answerTitle: "Falso",
-                            isCorrect: true
-                        }
-                    ]
-                }
-            ]
-        },
-        intermediate: {
-            questions: [
-                {
-                    question: "Qual o operador do tipo 'ou'?",
-                    includedContents: ['Condicionais', 'Operadores relacionais', 'Operadores lógicos'],
-                    answers: [
-                        {
+                         {
                             answerTitle: "&&",
-                            isCorrect: false
+                            isCorrect: true
                         },
                         {
                             answerTitle: "||",
-                            isCorrect: true
+                            isCorrect: false
                         },
                         {
                             answerTitle: "!",
@@ -458,14 +413,147 @@ export const QuizDataBase: QuizDataBaseType = {
                             isCorrect: false
                         },
                     ]
+                },
+                {
+                    question: "Qual o operador do tipo 'diferente'?",
+                    includedContents: ['operadores'],
+                    answers: [
+                         {
+                            answerTitle: "&&",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "||",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "!",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "!=",
+                            isCorrect: true
+                        },
+                    ]
+                },
+                {
+                    question: "Qual o operador do tipo 'not'?",
+                    includedContents: ['operadores'],
+                    answers: [
+                         {
+                            answerTitle: "&&",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "||",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "!",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "!=",
+                            isCorrect: false
+                        },
+                    ]
+                },
+                {
+                    question: "Qual o operador de adição?",
+                    includedContents: ['operadores'],
+                    answers: [
+                         {
+                            answerTitle: "*",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "+",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "-",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "/",
+                            isCorrect: false
+                        },
+                    ]
+                },
+                {
+                    question: "Qual o operador de divisão?",
+                    includedContents: ['operadores'],
+                    answers: [
+                         {
+                            answerTitle: "+",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "%",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "//",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "/",
+                            isCorrect: true
+                        },
+                    ]
+                },
+                {
+                    question: "Qual operador é utilizado para obter o resto de uma divisão?",
+                    includedContents: ['operadores'],
+                    answers: [
+                         {
+                            answerTitle: "%",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "||",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "!",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "!=",
+                            isCorrect: false
+                        },
+                    ]
+                },
+                {
+                    question: "Qual das seguintes máscaras formata o nosso número com duas casas decimais?",
+                    includedContents: ['operadores'],
+                    answers: [
+                         {
+                            answerTitle: "%f.2",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "%float.2",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "%.2f",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "%format.2f",
+                            isCorrect: false
+                        },
+                    ]
                 }
+
             ]
         },
-         advanced: {
+        advanced: {
             questions: [
                 {
                     question: "Um loop for iniciado em i = 0 e repetido até atingir a condição de i = 5 irá se repetir quantas vezes?",
-                    includedContents: ['variaveis', 'tipos de dados'],
+                    includedContents: ['repeticao'],
                     answers: [
                         {
                             answerTitle: "5",
@@ -482,6 +570,488 @@ export const QuizDataBase: QuizDataBaseType = {
                         {
                             answerTitle: "6",
                             isCorrect: false
+                        },
+                    ]
+                },
+                {
+                    question: "Qual das opções é utilizada para separar as instruções de um loop for?",
+                    includedContents: ['repeticao'],
+                    answers: [
+                        {
+                            answerTitle: ".",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: ",",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: ";",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: ":",
+                            isCorrect: false
+                        }
+                    ]
+                },
+                {
+                    question: "Um loop for iniciado em i = 0 e repetido até atingir a condição de i = 5, qual será o valor de i na sua ulitma iteração?",
+                    includedContents: ['repeticao'],
+                    answers: [
+                        {
+                            answerTitle: "5",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "4",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "3",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "6",
+                            isCorrect: false
+                        },
+                    ]
+                },
+                {
+                    question: "Um loop while se repete até que: ",
+                    includedContents: ['repeticao'],
+                    answers: [
+                        {
+                            answerTitle: "A variável de controle i atinja o número determinado",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "A sua condição seja satisfeita",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "O programa encerre",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "O usuário pare de entrar com dados à ele",
+                            isCorrect: false
+                        },
+                    ]
+                },
+                {
+                    question: "O que significa a instrução while?",
+                    includedContents: ['repeticao'],
+                    answers: [
+                        {
+                            answerTitle: "Enquanto",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "Portanto",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Para",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Faça enquanto",
+                            isCorrect: false
+                        },
+                    ]
+                },
+                {
+                    question: "O que faz a instrução Do While?",
+                    includedContents: ['repeticao'],
+                    answers: [
+                        {
+                            answerTitle: "Faz x iterações determinadas no código",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Executa apenas se a sua condição for verdadeira",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Executa pelo menos uma vez, após isso avalia a sua condição de parada",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "Incrementa valor a uma variável a cada iteração",
+                            isCorrect: false
+                        },
+                    ]
+                },
+                {
+                    question: "Um loop while com a condição i < 5, só irá parar quando: ",
+                    includedContents: ['repeticao'],
+                    answers: [
+                        {
+                            answerTitle: "i for maior ou igual a 5",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "i for menor que 5",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "i for maior que 5",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "i for igual a 5",
+                            isCorrect: false
+                        },
+                    ]
+                },
+                {
+                    question: "O loop while executa no mínimo uma vez antes de começar a avaliar a sua condição de parada?",
+                    includedContents: ['repeticao'],
+                    answers: [
+                        {
+                            answerTitle: "Não",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "Sim",
+                            isCorrect: false
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+    frontend: {
+        basic: {
+            questions: [
+                {
+                    question: "Quais das alternativas a seguir é um elemento (tag):",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "src",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "href",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "title",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "alt",
+                            isCorrect: false
+                        },
+                    ]
+                },
+                {
+                    question: "HTML é uma linguagem de programação?",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "Verdadeiro",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Falso",
+                            isCorrect: true
+                        }
+                    ]
+                },
+                {
+                    question: "Qual a tag responsável pela quebra de linha no HTML?",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "<p>",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "<h1>",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "<div>",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "<br>",
+                            isCorrect: true
+                        }
+                    ]
+                },
+                {
+                    question: `Complete a linha de código: <img ___"imagem.png">`,
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "src",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "alt",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "href",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "class",
+                            isCorrect: false
+                        }
+                    ]
+                },
+                {
+                    question: "Como fazer um comentário em HTML:",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "/* */",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "<!-- -->",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "//",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "#",
+                            isCorrect: false
+                        }
+                    ]
+                }
+            ]
+        },
+        intermediate: {
+            questions: [
+                {
+                    question: "Como ATRIBUTO, o style deve ser inserido em que lugar no código?",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "Em outro arquivo de extensão .html",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Dentro da tag de abertura do elemento a ser modificado",
+                            isCorrect: true
+                        },
+                        {
+                            answerTitle: "Em um arquivo de extensão .css",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Entre a abertura e fechamento da tag <head>",
+                            isCorrect: false
+                        },
+                    ]
+                },
+                {
+                    question: "Dentre as opções abaixo, qual delas não é um tipo de lista em HTML:",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "Lista não ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista com descrições",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista de prioridades",
+                            isCorrect: true
+                        },
+                    ]
+                },
+                {
+                    question: "Dentre as opções abaixo, qual delas não é um tipo de lista em HTML:",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "Lista não ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista com descrições",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista de prioridades",
+                            isCorrect: true
+                        },
+                    ]
+                },
+                {
+                    question: "Dentre as opções abaixo, qual delas não é um tipo de lista em HTML:",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "Lista não ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista com descrições",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista de prioridades",
+                            isCorrect: true
+                        },
+                    ]
+                },
+                {
+                    question: "Dentre as opções abaixo, qual delas não é um tipo de lista em HTML:",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "Lista não ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista com descrições",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista de prioridades",
+                            isCorrect: true
+                        },
+                    ]
+                }
+            ]
+        },
+         advanced: {
+            questions: [
+                {
+                    question: "Dentre as opções abaixo, qual delas não é um tipo de lista em HTML:",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "Lista não ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista com descrições",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista de prioridades",
+                            isCorrect: true
+                        },
+                    ]
+                },
+                {
+                    question: "Dentre as opções abaixo, qual delas não é um tipo de lista em HTML:",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "Lista não ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista com descrições",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista de prioridades",
+                            isCorrect: true
+                        },
+                    ]
+                },
+                {
+                    question: "Dentre as opções abaixo, qual delas não é um tipo de lista em HTML:",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "Lista não ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista com descrições",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista de prioridades",
+                            isCorrect: true
+                        },
+                    ]
+                },
+                {
+                    question: "Dentre as opções abaixo, qual delas não é um tipo de lista em HTML:",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "Lista não ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista com descrições",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista de prioridades",
+                            isCorrect: true
+                        },
+                    ]
+                },
+                {
+                    question: "Dentre as opções abaixo, qual delas não é um tipo de lista em HTML:",
+                    includedContents: ['introducao'],
+                    answers: [
+                        {
+                            answerTitle: "Lista não ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista ordenadas",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista com descrições",
+                            isCorrect: false
+                        },
+                        {
+                            answerTitle: "Lista de prioridades",
+                            isCorrect: true
                         },
                     ]
                 }

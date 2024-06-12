@@ -27,8 +27,9 @@ export function CourseLevelSelection(){
             <CourseInformationCard
                 title="Básico"
                 buttonLabel="Começar"
-                content={["Configurando a IDE", "Texto"]}
+                content={course === "frontend" ? ["Instalação do VSCode", "Formatação de Textos", "Imagens e Links"] : ["Instalação da IDE", "Variáveis"]}
                 buttonTo={`/ContentSelection/${course}/basic`}
+                totalTime={0}
              />
             </div>
             </section>
@@ -39,14 +40,16 @@ export function CourseLevelSelection(){
                 <CourseInformationCard
                     title="Intermediário"
                     buttonLabel="Começar"
-                    content={["Tags semânticas"]}
+                    content={course === "frontend" ? ["Style", "Tabelas e Listas"] : ["Operadores", "Estruturas Condicionais"]}
                     buttonTo={`/ContentSelection/${course}/intermediate`}
+                    totalTime={0}
                 />
                 <CourseInformationCard
                     title="Avançado"
                     buttonLabel="Começar"
-                    content={["Tabelas", "Formulários"]}
+                    content={course === "frontend" ? ["Divs e Classes", "CSS"] : ["Estruturas de Repetição"]}
                     buttonTo={`/ContentSelection/${course}/advanced`}
+                    totalTime={0}
                 />
                 </div>
             </section>
