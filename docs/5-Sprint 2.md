@@ -1,7 +1,32 @@
 # Sprint 2
 
-Nesta seção, deverão ser incluídos todos os artefatos produzidos pertinentes à entrega referente à Sprint 2.
+Criar funcionalidade de Quiz
+- Layout
+- Questões
+- Validação
+- Prevenção de erros
+- Base do relatório final (não é a versão final ainda)
+- Corrigindo bugs de rotas da sidebar
 
-O detalhamento do que deverá será entregue, será definido em sala em conjunto com seu(sua) professor(a).
+Apostila(PDF)
+- Atualização do material
 
-Vale destacar que, tudo o que foi produzido de registros (fotográficos, lista de presença, vídeos etc) deverá ser incluído nesta etapa. Nesta etapa, também deverão ser apresentadas as percepções do grupo com relação à prática extensionista desenvolvida respondendo questões como: o objetivo inicial foi alcançado? quais foram as principais dificuldades enfrentadas pelo grupo? que mudanças poderiam ser realizadas que tornaria o processo mais eficiente? Entre outras...
+Vídeo aulas HTML
+- Instalação Visual Studio Code
+- Formatação de texto
+- Inserção de imagens e links
+- Atributos
+- Listas e Tabelas
+- Div e Class
+- Estilização com CSS
+- [Playlist no youtube](https://www.youtube.com/playlist?list=PLrY4kuRO8ZyZM6hgWNzlfSBU04Afry9OO)
+
+Vídeo aulas C
+- Instalação CodeBlocks
+- Primeiro programa em C e conceito de variável
+- Operadores matemáticos e condicionais
+- Estruturas de repetição(for, while e do while)
+- [Playlist no youtube](https://www.youtube.com/playlist?list=PLCY5bqBo89WxVTLbnLkoTzGZPlmN5VAPl)
+
+Feedback dos participantes
+- [Formulário](https://forms.gle/ZCehjSpX1ERpzhmbA)
