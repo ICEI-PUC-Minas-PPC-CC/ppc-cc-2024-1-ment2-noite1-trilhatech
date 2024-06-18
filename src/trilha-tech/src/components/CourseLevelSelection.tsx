@@ -4,17 +4,11 @@ import { coursesDatabase, CourseType, LevelType } from "../data/database";
 
 export function CourseLevelSelection(){
     const  {course} = useParams<{course: CourseType}>();
-
-    function getContentArray(level: LevelType){
-        if(course){
-            const contentArray = coursesDatabase[course][level]; 
-        }
-    }
     
     return(
         <>
-            <section className="flex px-16 w-full h-max-[496px] justify-between">
-            <div className="flex flex-col justify-between gap-8 w-[577px] p-2">
+            <section className="flex  md:px-16 w-full h-max-[496px] justify-between">
+            <div className="flex flex-col justify-between gap-8 screen lg:p-2">
             <div className="flex flex-col gap-8">
                 {course && (
                     <h1 className="text-4xl text-slate-200 font-semibold">{coursesDatabase[course].name}</h1>
@@ -34,7 +28,7 @@ export function CourseLevelSelection(){
             </div>
             </section>
 
-            <section className="flex flex-col mt-8 px-16 gap-5">
+             <section className="flex flex-col mt-8 px-2 md:px-16 gap-5">
                 <h2 className="text-2xl text-slate-200">Mais Níveis</h2>
                 <div className="flex gap-7 flex-wrap">
                 <CourseInformationCard

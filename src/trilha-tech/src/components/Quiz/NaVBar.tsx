@@ -10,11 +10,11 @@ export function NavBar({Course}: {
   const navigate = useNavigate();
 
   return (
-    <nav className="w-full px-36 py-6 flex justify-between items-center">
+    <nav className="w-full md:px-36 px-4 py-6 flex md:justify-between items-center">
       <img
-            className="h-[120px] w-[120px] mt-10"
+            className="h-[120px] w-[120px]"
             src= "/logo_final.svg"
-          />
+        />
       <span className="font-bold text-2xl">
         {Course && getCourseName(Course)}
       </span>

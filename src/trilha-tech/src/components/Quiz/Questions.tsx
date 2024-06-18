@@ -46,7 +46,7 @@ export function Questions( {handleIsAnswerCorrect}: QuestionsProps) {
 
   return (
     <div className="w-full flex flex-col items-center gap-9 flex-1">
-      <h1 className="font-bold text-4xl">
+      <h1 className="font-bold text-xl text-center md:text-4xl">
         {questions[quizController.actualQuestion].question}
       </h1>
       <div className="flex flex-col gap-4">

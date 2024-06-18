@@ -1,17 +1,16 @@
-import { Link } from "react-router-dom";
 import SearchCourses from "../assets/SearchCourses.svg";
 import { CourseInformationCard } from "./CourseInformationCard";
 
 export function DiscoverCourses() {
   return (
     <>
-      <section className="flex px-16 w-full h-max-[496px] justify-between">
+      <section className="flex md:px-16 w-full h-max-[496px] max-h-full justify-between">
         <div className="flex flex-col justify-between gap-8 w-[577px] p-2">
           <div className="flex flex-col gap-8">
             <h1 className="text-4xl text-slate-200 font-semibold">
               Comece selecionando uma Trilha!
             </h1>
-            <p className="leading-tight text-base w-96">
+            <p className="leading-tight text-base md:w-96">
               Está em dúvida por onde começar? Tente a nossa trilha para
               iniciantes, ou, se preferir escolha uma de nossas outras trilhas!
             </p>
@@ -24,7 +23,7 @@ export function DiscoverCourses() {
             totalTime={2}
           />
         </div>
-        <div className="hidden md:flex flex-1">
+        <div className="hidden md:flex md:flex-1">
           <img
             className="h-[496px] w-full"
             src={SearchCourses}
@@ -33,7 +32,7 @@ export function DiscoverCourses() {
         </div>
       </section>
 
-      <section className="flex flex-col mt-8 px-16 gap-5">
+      <section className="flex flex-col mt-8 md:px-16 gap-5">
         <h2 className="text-2xl text-slate-200">Trilhas</h2>
         <div className="flex gap-7 flex-wrap">
           <CourseInformationCard

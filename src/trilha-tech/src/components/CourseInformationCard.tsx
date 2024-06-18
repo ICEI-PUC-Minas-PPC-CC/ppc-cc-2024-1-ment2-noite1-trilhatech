@@ -10,7 +10,7 @@ interface CourseInformationCardProps{
 
 export function CourseInformationCard({ title, content, buttonLabel, buttonTo, totalTime }: CourseInformationCardProps) {
   return (
-    <div className="bg-slate-600 w-96 h-64 rounded-xl  py-4 px-5  flex flex-col gap-6">
+    <div className="bg-slate-600 w-full md:w-96 h-64 rounded-xl  py-4 px-5 flex flex-col gap-6">
       <div className="flex justify-between items-center">
         <h2 className="text-2xl text-slate-200">{title}</h2>
         {totalTime !== 0 && (<span className="text-sm">{totalTime} horas</span>)}

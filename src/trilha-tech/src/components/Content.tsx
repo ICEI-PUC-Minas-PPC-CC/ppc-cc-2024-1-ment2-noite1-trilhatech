@@ -61,8 +61,8 @@ export function Content(){
             </header>
             <section className="flex flex-col items-center">
                 <div className="flex flex-col gap-6">
-                    <ReactPlayer url={content?.videoUrl} width={750} height={400} volume={0.4} controls={true} />
-                    <div className="flex justify-between">
+                    <ReactPlayer style={{aspectRatio: "16/9", width: "100%"}} url={content?.videoUrl} volume={0.4} controls={true} />
+                    <div className="flex justify-center gap-8 md:justify-between">
                         <button className="px-10 py-3 bg-slate-300 rounded-2xl text-slate-900" onClick={()=>{downloadPdf()}}>Material</button>
                         <Link
                              className={`px-10 py-3 bg-lime-400 rounded-2xl text-lime-900`}

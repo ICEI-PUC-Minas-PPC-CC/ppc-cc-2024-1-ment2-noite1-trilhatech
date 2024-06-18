@@ -1,9 +1,11 @@
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 import { QuizDataBase, CourseType, LevelType, QuestionProps } from '../data/database'
 import { useEffect, useState, createContext } from "react";
 import { NavBar } from "../components/Quiz/NaVBar";
 import { Questions } from "../components/Quiz/Questions";
 import { QuizFooter } from "../components/Quiz/QuizFooter";
+import { Check } from 'lucide-react';
+import { getCourseContentTitle, getCourseName } from '../utils/getCourseContentTitle';
 
 interface QuizControllerProps {
     actualQuestion: number;
@@ -85,9 +87,13 @@ export function Quiz(){
         navigate(-1);
    }
 
+   function getQuizPercentage(){
+    return quizResults.correctAnswers / quizResults.totalQuestions * 100
+   }
+
     return (
         questions.length > 0 &&
-        <main className="w-screen h-screen flex flex-col gap-3">
+        <main className="md:w-screen h-[100svh] flex flex-col gap-3">
             {
                 !quizFinished ? 
                     <QuizContextProvider.Provider value={{questions, quizController, setQuizController, setQuizResults, quizResults, setQuizFinished: handleSetQuizFinished}}>
@@ -97,14 +103,28 @@ export function Quiz(){
                     </QuizContextProvider.Provider>
                     :
                     <div className='w-full h-full flex items-center justify-center gap-6 flex-col'>
-                        <div className='flex flex-col items-center'>
-                            <h1 className='text-xl font-semibold' >Quiz finalizado!</h1>
-                            <p className='text-lg'>
-                                Você acertou {quizResults.correctAnswers} de {quizResults.totalQuestions}
+                        <div className='flex flex-col items-center gap-3'>
+                            <h1 className='text-2xl font-bold'>Resultados do Desafio</h1>
+                            <Check size={50} className='rounded-full bg-lime-400 text-lime-800 p-2' />
+                            <p className='max-w-[50vw] leading-tight tracking-tighter text-center'>
+                                {
+                                    getQuizPercentage() >= 60 ? "Bom trabalho, você foi fenomenal!" : "Bom trabalho, mas você pode melhorar, tente revisar os conteúdos!"
+                                }
                             </p>
                         </div>
-                        <div className='flex justify-between gap-12'>
-                            <button className='border-2 border-lime-400 p-2 rounded-md bg-lime-400 text-slate-600 font-bold' onClick={handleResetQuiz} >Reiniciar</button>
+                        <div className='bg-slate-600 p-3 rounded-lg flex flex-col items-center gap-2'>
+                            <div className='flex flex-col gap-5 items-center'>
+                                <h2 className='text-xl font-bold'>
+                                    Sua pontuação
+                                </h2>
+                                <span className='text-4xl font-extrabold text-lime-400'>{getQuizPercentage()}%</span>
+                            </div>
+                            <span className='h-1 w-full border-t border-slate-300/50'></span>
+                            <span className='text-sm'>Você acertou {quizResults.correctAnswers} de {quizResults.totalQuestions} questões</span>
+                        </div>
+                        <Link to={'https://docs.google.com/forms/d/e/1FAIpQLSfYNOu5cOQVNcX2xknYK2U_OHv4QLaVAoWPDkXqLdWtp9JiuA/viewform'} className='underline text-lime-400 font-semibold'>Avalie o TrilhaTech</Link>
+                        <div className='flex justify-evenly w-full md:justify-center md:gap-12'>
+                             <button className='border-2 border-lime-400 p-2 rounded-md bg-lime-400 text-slate-600 font-bold' onClick={handleResetQuiz} >Reiniciar</button>
                             <button className='border-2 border-lime-400 p-2 rounded-md bg-lime-400 text-slate-600 font-bold' onClick={handleCloseQuiz} >Continuar</button>
                         </div>
                     </div>

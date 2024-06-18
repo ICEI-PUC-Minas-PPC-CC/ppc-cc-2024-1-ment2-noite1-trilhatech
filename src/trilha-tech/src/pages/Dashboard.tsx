@@ -1,16 +1,31 @@
-import { Link, Outlet } from "react-router-dom";
-import { ChevronDown } from "lucide-react";
+import { Link, useNavigate, Outlet } from "react-router-dom";
+import { ArrowBigLeft, ChevronDown, Home } from "lucide-react";
 
 export function Dashboard() {
+  const navigate = useNavigate();
   return (
     <div className="flex">
 
-      <nav className="max-w-48 py-8 px-3 h-screen bg-slate-500 shadow-sm flex flex-col gap-16 rounded-r-md fixed">
+      <div className="absolute w-full flex justify-between items-center p-2 z-10 md:hidden">
+        <button 
+          onClick={() => navigate(-1)} 
+          className="bg-re rounded-full flex items-center justify-center " 
+        >
+          <ArrowBigLeft />
+        </button>
+
+        <button 
+          onClick={() => navigate('/')} 
+          className="bg-red rounded-full flex items-center justify-center p-1" 
+        >
+          <Home />
+        </button>
+
+      </div>
+
+      <nav className="max-w-48 py-8 px-3 h-screen hidden bg-slate-500 shadow-sm md:flex flex-col gap-16 rounded-r-md fixed">
         <div className="size-6 flex items-center justify-center w-full">
-          <img
-            className="h-[120px] w-full mt-10"
-            src= "/logo_final.svg"
-          />
+          <h1 className="font-medium text-2xl">Logo</h1>
         </div>
         <div className="flex flex-col gap-2">
           <Link to={'/'} className="font-bold antialiased text-sm text-slate-300/80 flex items-center gap-1 cursor-pointer">
@@ -23,7 +38,7 @@ export function Dashboard() {
         </div>
       </nav>
 
-      <main className="h-screen w-screen py-9 relative ml-48">
+      <main className="h-screen w-screen overflow-y-scroll py-9 relative md:ml-48">
         <Outlet />
       </main>
 
