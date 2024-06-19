@@ -93,7 +93,7 @@ export function Quiz(){
 
     return (
         questions.length > 0 &&
-        <main className="md:w-screen h-[100svh] flex flex-col gap-3">
+        <main className="md:w-full h-[100svh] md:h-screen flex flex-col gap-3">
             {
                 !quizFinished ? 
                     <QuizContextProvider.Provider value={{questions, quizController, setQuizController, setQuizResults, quizResults, setQuizFinished: handleSetQuizFinished}}>
